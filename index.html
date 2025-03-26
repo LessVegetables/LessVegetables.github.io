@@ -40,7 +40,8 @@
                         <div class="contact-info">
                             <p class="contact-title" data-key="email">Email</p>
 
-                            <a href="mailto:danielgehrman@icloud.com" class="contact-link">danielgehrman</a>
+                            <a href="mailto:danielgehrman@icloud.com" class="contact-link"
+                                data-key="emailAddress">danielgehrman@icloud.com</a>
                         </div>
                     </li>
 
@@ -56,15 +57,15 @@
                         </div>
                     </li>
 
-                    <!-- <li class="contact-item">
+                    <li class="contact-item">
                         <div class="icon-box">
-                            <ion-icon name="calendar-outline"></ion-icon>
+                            <ion-icon name="school-outline"></ion-icon>
                         </div>
 
                         <div class="contact-info">
-                            <p class="contact-title">Birthday</p>
+                            <p class="contact-title" data-key="university">University</p>
 
-                            <time datetime="1982-06-23">June 23, 1982</time>
+                            <time data-key="university-name">NSU</time>
                         </div>
                     </li>
 
@@ -74,11 +75,11 @@
                         </div>
 
                         <div class="contact-info">
-                            <p class="contact-title">Location</p>
+                            <p class="contact-title" data-key="location">Location</p>
 
-                            <address>Sacramento, California, USA</address>
+                            <address data-key="address">Minneapolis, Minnesota, USA</address>
                         </div>
-                    </li> -->
+                    </li>
                 </ul>
 
                 <div class="separator"></div>
@@ -93,12 +94,17 @@
         <div class="main-content">
             <nav class="navbar">
                 <ul class="navbar-list">
-                    <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
-                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
-                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
-                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li>
-                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
-                    <li class="navbar-item"><button class="navbar-link" id="lang-toggle">EN/RU</button></li>
+                    <li class="navbar-item"><button class="navbar-link active" data-nav-link
+                            daat-key="navbar-about">About</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link
+                            data-key="navbar-resume">Resume</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link
+                            data-key="navbar-projects">Projects</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link
+                            data-key="navbar-contact">Contact</button></li>
+                    <!-- <li class="navbar-item"><button class="navbar-link" id="lang-toggle">EN/RU</button></li> -->
+                    <li class="navbar-item"><button class="navbar-link" id="lang-toggle"
+                            data-key="languageChange">Русский</button></li>
                 </ul>
             </nav>
 
@@ -123,6 +129,23 @@
                             <div class="service-content-box">
                                 <h4 class="h4 service-item-title">Telegram Bots</h4>
                                 <p class="service-item-text">I can write telegram bots</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="service">
+                    <h3 class="h3 service-title" data-key="interests">My Interests</h3>
+
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/4389jZkP/icon-design.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Backend</h4>
+                                <p class="service-item-text">I like servers</p>
                             </div>
                         </li>
                     </ul>

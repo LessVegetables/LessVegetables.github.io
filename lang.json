@@ -1,4 +1,24 @@
 {
+    "navbar-about": {
+        "en": "About",
+        "ru": "Обо Мне"
+    },
+    "navbar-resume": {
+        "en": "Resume",
+        "ru": "Резюме"
+    },
+    "navbar-projects": {
+        "en": "Projects",
+        "ru": "Проекты"
+    },
+    "navbar-contact": {
+        "en": "Contact",
+        "ru": "Контакт"
+    },
+    "languageChange": {
+        "en": "Русский",
+        "ru": "English"
+    },
     "name": {
         "en": "Daniel Gehrman",
         "ru": "Даниил Герман"
@@ -14,6 +34,26 @@
     "email": {
         "en": "Email",
         "ru": "Почта"
+    },
+    "emailAddress": {
+        "en": "danielgehrman@icloud.com",
+        "ru": "d.german@g.nsu.ru"
+    },
+    "university": {
+        "en": "University",
+        "ru": "Университет"
+    },
+    "university-name": {
+        "en": "Novosibirsk State University",
+        "ru": "Новосибирский Государственный Университет"
+    },
+    "location": {
+        "en": "Location",
+        "ru": "Город"
+    },
+    "address": {
+        "en": "Minneapolis, Minnesota, USA",
+        "ru": "Новосибирск, Россия"
     },
     "homeTitle": {
         "en": "Home",
@@ -42,6 +82,10 @@
     "skills": {
         "en": "My Skills",
         "ru": "Мои Навыки"
+    },
+    "interests": {
+        "en": "My Interests",
+        "ru": "Мои Интересы"
     },
     "welcome": {
         "en": "Welcome to my website!",
