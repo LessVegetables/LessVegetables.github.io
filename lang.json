@@ -31,6 +31,18 @@
         "en": "Resume",
         "ru": "Резюме"
     },
+    "about-me": {
+        "en": "About Me",
+        "ru": "Обо Мне"
+    },
+    "about-text": {
+        "en": "Hi! I'm Daniel. I love to code.",
+        "ru": "Привет! Я Даниил. Я люблю прогать."
+    },
+    "skills": {
+        "en": "My Skills",
+        "ru": "Мои Навыки"
+    },
     "welcome": {
         "en": "Welcome to my website!",
         "ru": "Добро пожаловать на мой сайт!"
