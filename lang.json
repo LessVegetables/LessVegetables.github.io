@@ -1,0 +1,50 @@
+{
+    "name": {
+        "en": "Daniel Gehrman",
+        "ru": "Даниил Герман"
+    },
+    "title": {
+        "en": "Computer Science Student",
+        "ru": "Студент программист"
+    },
+    "info-more-btn": {
+        "en": "Show Contacts",
+        "ru": "Показать Контакты"
+    },
+    "email": {
+        "en": "Email",
+        "ru": "Почта"
+    },
+    "homeTitle": {
+        "en": "Home",
+        "ru": "Главная"
+    },
+    "navHome": {
+        "en": "Home",
+        "ru": "Главная"
+    },
+    "navProjects": {
+        "en": "Projects",
+        "ru": "Проекты"
+    },
+    "navResume": {
+        "en": "Resume",
+        "ru": "Резюме"
+    },
+    "welcome": {
+        "en": "Welcome to my website!",
+        "ru": "Добро пожаловать на мой сайт!"
+    },
+    "loremIpsum": {
+        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "ru": "Лорем ипсум долор сит амет, consectetuer adipiscing elit."
+    },
+    "projectsTitle": {
+        "en": "Projects",
+        "ru": "Проекты"
+    },
+    "projectsHeader": {
+        "en": "My Projects",
+        "ru": "Мои проекты"
+    }
+}
