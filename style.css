@@ -280,8 +280,13 @@ article.active {
 
 
 .avatar-box {
-    background: var(--bg-gradient-onyx);
-    border-radius: 20px;
+    /* background: var(--bg-gradient-onyx); */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    /* border-radius: 20px; */
+    border-radius: 50%;
+    clip-path: circle(50% at center);
 }
 
 .info-content .name {
