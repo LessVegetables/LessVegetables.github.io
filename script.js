@@ -2,6 +2,78 @@
 
 //Changing the language
 document.addEventListener("DOMContentLoaded", function () {
+    // // Check for a saved theme preference in localStorage
+    // let savedTheme = localStorage.getItem("theme");
+    // let theme;
+
+    // if (savedTheme) {
+    //     theme = savedTheme;
+    // } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    //     // If no saved preference, check the system preference
+    //     theme = "dark";
+    // } else {
+    //     // Fallback default to dark mode
+    //     theme = "dark";
+    // }
+
+    // // Apply the theme
+    // setTheme(theme);
+
+    // document.getElementById("theme-toggle").addEventListener("click", function () {
+    //     let currentTheme = document.documentElement.getAttribute("data-theme");
+
+    //     // Toggle between "dark" and "light"
+    //     let newTheme = (currentTheme === "dark") ? "light" : "dark";
+
+    //     // Save the new theme in localStorage
+    //     localStorage.setItem("theme", newTheme);
+
+    //     // Apply the new theme
+    //     setTheme(newTheme);
+    // });
+
+
+    // // Function to apply the theme by setting an attribute on <html>
+    // function setTheme(theme) {
+    //     document.documentElement.setAttribute("data-theme", theme);
+    // }
+
+    let themeToggle = document.getElementById("theme-toggle");
+    if (!themeToggle) {
+        console.error("Theme toggle button not found!");
+        return; // Exit if button doesn't exist
+    }
+
+    // themeToggle.addEventListener("click", function () {
+    //     console.log("adding theme event listener");
+    //     let currentTheme = document.documentElement.getAttribute("data-theme");
+    //     let newTheme = (currentTheme === "dark") ? "light" : "dark";
+
+    //     localStorage.setItem("theme", newTheme);
+    //     setTheme(newTheme);
+    // });
+    themeToggle.addEventListener("click", function () {
+        let currentTheme = document.documentElement.getAttribute("data-theme");
+        if (currentTheme === "light") {
+            console.log("lights out! switching to dark");
+            localStorage.setItem("theme", "dark");
+            document.documentElement.removeAttribute("data-theme");
+        } else {
+            console.log("heads up! turning on the lights");
+            localStorage.setItem("theme", "light");
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+        console.log("switched!");
+        console.log("Current data-theme:", document.documentElement.getAttribute("data-theme"));
+    });
+
+
+    function setTheme(theme) {
+        console.log("setting theme");
+        document.documentElement.setAttribute("data-theme", theme);
+    }
+
+    // language change // 
     let currentLang = localStorage.getItem("lang") || "en";
     let translations = {};
 
@@ -55,26 +127,26 @@ const modalImg = document.querySelector('[data-modal-img]');
 const modalTitle = document.querySelector('[data-modal-title]');
 const modalText = document.querySelector('[data-modal-text]');
 
-const testimonialsModalFunc = function () {
-    modalContainer.classList.toggle('active');
-    overlay.classList.toggle('active');
-}
+// const testimonialsModalFunc = function () {
+//     modalContainer.classList.toggle('active');
+//     overlay.classList.toggle('active');
+// }
 
-for (let i = 0; i < testimonialsItem.length; i++) {
-    testimonialsItem[i].addEventListener('click', function () {
-        modalImg.src = this.querySelector('[data-testimonials-avatar]').src;
-        modalImg.alt = this.querySelector('[data-testimonials-avatar]').alt;
-        modalTitle.innerHTML = this.querySelector('[data-testimonials-title]').innerHTML;
-        modalText.innerHTML = this.querySelector('[data-testimonials-text]').innerHTML;
+// for (let i = 0; i < testimonialsItem.length; i++) {
+//     testimonialsItem[i].addEventListener('click', function () {
+//         modalImg.src = this.querySelector('[data-testimonials-avatar]').src;
+//         modalImg.alt = this.querySelector('[data-testimonials-avatar]').alt;
+//         modalTitle.innerHTML = this.querySelector('[data-testimonials-title]').innerHTML;
+//         modalText.innerHTML = this.querySelector('[data-testimonials-text]').innerHTML;
 
-        testimonialsModalFunc();
-    })
-}
+//         testimonialsModalFunc();
+//     })
+// }
 
 //Activating close button in modal-testimonial
 
-modalCloseBtn.addEventListener('click', testimonialsModalFunc);
-overlay.addEventListener('click', testimonialsModalFunc);
+// modalCloseBtn.addEventListener('click', testimonialsModalFunc);
+// overlay.addEventListener('click', testimonialsModalFunc);
 
 //Activating Filter Select and filtering options
 
