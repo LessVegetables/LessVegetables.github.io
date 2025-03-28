@@ -1,122 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* :root {
-    --bg-gradient-onyx: linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%);
-    --bg-gradient-jet: linear-gradient(to bottom right, hsla(240, 1%, 18%, .251) 3%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
-    --bg-gradient-yellow1: linear-gradient(to bottom right, hsl(45, 100%, 71%) 0%, hsla(36, 100%, 69%, 0) 50%);
-    --bg-gradient-yellow2: linear-gradient(135deg, hsla(45, 100%, 71%, .251) 0%, hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
-    --border-gradient-onyx: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
-    --text-gradient-yellow: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
-
-    --jet: hsl(0, 0%, 22%);
-    --onyx: hsl(240, 1%, 17%);
-    --eerie-black1: hsl(240, 2%, 13%);
-    --eerie-black2: hsl(240, 2%, 12%);
-    --smoky-black: hsl(0, 0%, 7%);
-    --white1: hsl(0, 0%, 100%);
-    --white2: hsl(0, 0%, 98%);
-    --orange-yellow-crayola: hsl(45, 100%, 72%);
-    --vegas-gold: hsl(45, 54%, 58%);
-    --light-gray: hsl(0, 0%, 84%);
-    --light-gray70: hsla(0, 0%, 84%, .7);
-    --bittersweet-shimmer: hsl(0, 43%, 51%);
-
-    --ff-poppins: 'Poppins', sans-serif;
-
-    --fs1: 24px;
-    --fs2: 18px;
-    --fs3: 17px;
-    --fs4: 16px;
-    --fs5: 15px;
-    --fs6: 14px;
-    --fs7: 13px;
-    --fs8: 12px;
-
-    --fw300: 300;
-    --fw400: 400;
-    --fw500: 500;
-    --fw600: 600;
-
-    --shadow1: -4px 8px 24px hsla(0, 0%, 0%, .25);
-    --shadow2: 0px 16px 30px hsla(0, 0%, 0%, .25);
-    --shadow3: 0px 16px 40px hsla(0, 0%, 0%, .25);
-    --shadow4: 0px 25px 50px hsla(0, 0%, 0%, .15);
-    --shadow5: 0px 24px 80px hsla(0, 0%, 0%, .25);
-
-    --transition1: .25s ease;
-    --transition2: .5s ease-in-out;
-}
-
-[data-theme="light"] {
-    --bg-gradient-onyx: linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%);
-    --bg-gradient-jet: linear-gradient(to bottom right, hsla(240, 1%, 18%, .251) 3%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
-    --bg-gradient-yellow1: linear-gradient(to bottom right, hsl(45, 100%, 71%) 0%, hsla(36, 100%, 69%, 0) 50%);
-    --bg-gradient-yellow2: linear-gradient(135deg, hsla(45, 100%, 71%, .251) 0%, hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
-    --border-gradient-onyx: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
-    --text-gradient-yellow: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
-
-    --jet: hsl(0, 0%, 22%);
-    --onyx: hsl(240, 1%, 17%);
-    --eerie-black1: hsl(148, 100%, 50%);
-    --eerie-black2: hsl(240, 100%, 50%);
-    --smoky-black: hsl(0, 100%, 50%);
-    --white1: hsl(0, 0%, 100%);
-    --white2: hsl(0, 0%, 98%);
-    --orange-yellow-crayola: hsl(45, 100%, 72%);
-    --vegas-gold: hsl(45, 54%, 58%);
-    --light-gray: hsl(0, 0%, 84%);
-    --light-gray70: hsla(0, 0%, 84%, .7);
-    --bittersweet-shimmer: hsl(0, 43%, 51%);
-
-    --ff-poppins: 'Poppins', sans-serif;
-
-    --fs1: 24px;
-    --fs2: 18px;
-    --fs3: 17px;
-    --fs4: 16px;
-    --fs5: 15px;
-    --fs6: 14px;
-    --fs7: 13px;
-    --fs8: 12px;
-
-    --fw300: 300;
-    --fw400: 400;
-    --fw500: 500;
-    --fw600: 600;
-
-    --shadow1: -4px 8px 24px hsla(0, 0%, 0%, .25);
-    --shadow2: 0px 16px 30px hsla(0, 0%, 0%, .25);
-    --shadow3: 0px 16px 40px hsla(0, 0%, 0%, .25);
-    --shadow4: 0px 25px 50px hsla(0, 0%, 0%, .15);
-    --shadow5: 0px 24px 80px hsla(0, 0%, 0%, .25);
-
-    --transition1: .25s ease;
-    --transition2: .5s ease-in-out;
-}
- */
-
 :root {
     /* Background gradients */
     --bg-gradient-onyx: linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%);
     --bg-gradient-jet: linear-gradient(to bottom right, hsla(240, 1%, 18%, .251) 3%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
 
     /* Accent gradients now in blue instead of yellow */
-    --bg-gradient-blue1: linear-gradient(to bottom right, hsl(210, 100%, 65%) 0%, hsla(210, 100%, 60%, 0) 50%);
-    --bg-gradient-blue2: linear-gradient(135deg, hsla(210, 100%, 65%, .251) 0%, hsla(210, 100%, 60%, 0) 59.86%), hsl(240, 2%, 13%);
-    --text-gradient-blue: linear-gradient(to right, hsl(210, 100%, 66%), hsl(210, 100%, 60%));
+    --bg-gradient-1: linear-gradient(to bottom right, hsl(210, 100%, 65%) 0%, hsla(210, 100%, 60%, 0) 50%);
+    --bg-gradient-2: linear-gradient(135deg, hsla(210, 100%, 65%, .251) 0%, hsla(210, 100%, 60%, 0) 59.86%), hsl(240, 2%, 13%);
+    --text-gradient: linear-gradient(to right, hsl(210, 100%, 66%), hsl(210, 100%, 60%));
 
     /* Other colors */
     --border-gradient-onyx: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
     --jet: hsl(0, 0%, 22%);
     --onyx: hsl(240, 1%, 17%);
-    --eerie-black1: hsl(240, 2%, 13%);
-    --eerie-black2: hsl(240, 2%, 12%);
-    --smoky-black: hsl(0, 0%, 7%);
-    --white1: hsl(0, 0%, 100%);
-    --white2: hsl(0, 0%, 98%);
+    --icon-box-background: hsl(240, 2%, 13%);
+    --sidebar-background: hsl(240, 2%, 12%);
+    --body-background: hsl(0, 0%, 7%);
+    /*smoky black*/
+    --main-text-1: hsl(0, 0%, 100%);
+    --main-text-2: hsl(0, 0%, 98%);
 
     /* Accent color variable (blue) */
-    --blue-crayola: hsl(210, 100%, 66%);
+    --selection-background: hsl(210, 100%, 66%);
+    /* --blue-crayola aka orange-yellow-crayola*/
+    --focus-outline: hsl(210, 100%, 66%);
+    --icon-box: hsl(210, 100%, 66%);
     --vegas-blue: hsl(210, 54%, 58%);
 
     --light-gray: hsl(0, 0%, 84%);
@@ -156,9 +65,9 @@
     --bg-gradient-jet: linear-gradient(to bottom right, hsla(0, 0%, 96%, .251) 3%, hsla(0, 0%, 94%, 0) 100%), hsl(0, 0%, 95%);
 
     /* Blue accents adjusted for a light background */
-    --bg-gradient-blue1: linear-gradient(to bottom right, hsl(210, 100%, 85%) 0%, hsla(210, 100%, 80%, 0) 50%);
-    --bg-gradient-blue2: linear-gradient(135deg, hsla(210, 100%, 85%, .251) 0%, hsla(210, 100%, 80%, 0) 59.86%), hsl(0, 0%, 95%);
-    --text-gradient-blue: linear-gradient(to right, hsl(210, 100%, 40%), hsl(210, 100%, 35%));
+    --bg-gradient-1: linear-gradient(to bottom right, hsl(210, 100%, 85%) 0%, hsla(210, 100%, 80%, 0) 50%);
+    --bg-gradient-2: linear-gradient(135deg, hsla(210, 100%, 85%, .251) 0%, hsla(210, 100%, 80%, 0) 59.86%), hsl(0, 0%, 95%);
+    --text-gradient: linear-gradient(to right, hsl(210, 100%, 40%), hsl(210, 100%, 35%));
 
     /* Borders and other backgrounds */
     --border-gradient-onyx: linear-gradient(to bottom right, hsl(0, 0%, 90%) 0%, hsla(0, 0%, 90%, 0) 50%);
@@ -166,16 +75,18 @@
     /* Adjusted grays and text colors for light mode */
     --jet: hsl(0, 0%, 88%);
     --onyx: hsl(0, 0%, 95%);
-    --eerie-black1: hsl(0, 0%, 98%);
-    --eerie-black2: hsl(0, 0%, 99%);
-    --smoky-black: hsl(0, 0%, 100%);
+    --icon-box-background: hsl(0, 0%, 98%);
+    --sidebar-background: hsl(0, 0%, 99%);
+    --body-background: hsl(0, 0%, 100%);
 
     /* For light mode, use dark colors for text */
-    --white1: hsl(0, 0%, 0%);
-    --white2: hsl(0, 0%, 5%);
+    --main-text-1: hsl(0, 0%, 0%);
+    --main-text-2: hsl(0, 0%, 5%);
 
     /* Blue accent variables (darker for contrast) */
-    --blue-crayola: hsl(210, 100%, 40%);
+    --selection-background: hsl(210, 100%, 40%);
+    --focus-outline: hsl(210, 100%, 40%);
+    --icon-box: hsl(210, 100%, 40%);
     --vegas-blue: hsl(210, 54%, 40%);
 
     /* Retain or adjust other variables as needed */
@@ -191,6 +102,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: var(--transition2);
 }
 
 a {
@@ -203,6 +115,7 @@ li {
 
 img,
 ion-icon,
+/* icon, */
 a,
 button,
 time,
@@ -227,12 +140,12 @@ textarea {
 }
 
 ::selection {
-    background: var(--orange-yellow-crayola);
-    color: var(--smoky-black);
+    background: var(--selection-background);
+    color: var(--body-background);
 }
 
 :focus {
-    outline-color: var(--orange-yellow-crayola);
+    outline-color: var(--focus-outline);
 }
 
 html {
@@ -240,7 +153,8 @@ html {
 }
 
 body {
-    background: var(--smoky-black);
+    background: var(--body-background);
+    transition: var(--transition2);
 }
 
 main {
@@ -251,7 +165,7 @@ main {
 
 .sidebar,
 article {
-    background: var(--eerie-black2);
+    background: var(--sidebar-background);
     border: 1px solid var(--jet);
     border-radius: 20px;
     box-shadow: var(--shadow1);
@@ -280,22 +194,27 @@ article {
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    color: var(--orange-yellow-crayola);
+    color: var(--icon-box);
     box-shadow: var(--shadow1);
     z-index: 1;
+    object-fit: cover;
 }
 
 .icon-box::before {
     content: '';
     position: absolute;
     inset: 1px;
-    background: var(--eerie-black1);
+    background: var(--icon-box-background);
     border-radius: inherit;
     z-index: -1;
 }
 
 .icon-box ion-icon {
     --ionicon-stroke-width: 35px;
+    /* color: var(--icon-box); */
+    /* width: 80%; */
+    /* height: 80%; */
+    /* object-fit: cover; */
 }
 
 article {
@@ -321,7 +240,7 @@ article.active {
 .h3,
 .h4,
 .h5 {
-    color: var(--white2);
+    color: var(--main-text-2);
     text-transform: capitalize;
 }
 
@@ -354,7 +273,7 @@ article.active {
     left: 0;
     width: 30px;
     height: 3px;
-    background: var(--text-gradient-yellow);
+    background: var(--text-gradient);
     border-radius: 3px;
 }
 
@@ -369,7 +288,7 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-    background: var(--orange-yellow-crayola);
+    background: var(--selection-background);
     border-radius: 5px;
 }
 
@@ -427,8 +346,14 @@ article.active {
     clip-path: circle(50% at center);
 }
 
+.avatar-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .info-content .name {
-    color: var(--white2);
+    color: var(--main-text-2);
     font-size: var(--fs3);
     font-weight: var(--fw500);
     letter-spacing: -0.25px;
@@ -436,7 +361,7 @@ article.active {
 }
 
 .info-content .title {
-    color: var(--white1);
+    color: var(--main-text-1);
     background: var(--onyx);
     font-size: var(--fs8);
     font-weight: var(--fw300);
@@ -451,7 +376,7 @@ article.active {
     right: -15px;
     border-radius: 0 15px;
     font-size: 13px;
-    color: var(--orange-yellow-crayola);
+    color: var(--selection-background);
     background: var(--border-gradient-onyx);
     padding: 10px;
     box-shadow: var(--shadow2);
@@ -471,12 +396,12 @@ article.active {
 
 .info-more-btn:hover,
 .info-more-btn:focus {
-    background: var(--bg-gradient-yellow1);
+    background: var(--bg-gradient-1);
 }
 
 .info-more-btn:hover::before,
 .info-more-btn:focus::before {
-    background: var(--bg-gradient-yellow2);
+    background: var(--bg-gradient-2);
 }
 
 .info-more-btn span {
@@ -513,7 +438,7 @@ article.active {
 }
 
 .contact-info :is(.contact-link, time, address) {
-    color: var(--white2);
+    color: var(--main-text-2);
     font-size: var(--fs7);
 }
 
@@ -561,7 +486,7 @@ article.active {
     z-index: 5;
 }
 
-.navbar-list {
+.nav-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -569,20 +494,20 @@ article.active {
     padding: 0 10px;
 }
 
-.navbar-link {
+.nav-button {
     color: var(--light-gray);
     font-size: var(--fs8);
     padding: 20px 7px;
     transition: color var(--transition1);
 }
 
-.navbar-link:hover,
-.navbar-link:focus {
+.nav-button:hover,
+.nav-button:focus {
     color: var(--light-gray70);
 }
 
-.navbar-link.active {
-    color: var(--orange-yellow-crayola);
+.nav-button.active {
+    color: var(--focus-outline);
 }
 
 /*ABOUT*/
@@ -789,7 +714,7 @@ article.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--white2);
+    color: var(--main-text-2);
     font-size: 18px;
     opacity: .7;
 }
@@ -1078,7 +1003,7 @@ article.active {
     --scale: .8;
 
     background: var(--jet);
-    color: var(--orange-yellow-crayola);
+    color: var(--icon-box);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1106,7 +1031,7 @@ article.active {
 }
 
 .project-title {
-    color: var(--white2);
+    color: var(--main-text-2);
     font-size: var(--fs5);
     font-weight: var(--fw400);
     text-transform: capitalize;
@@ -1195,7 +1120,7 @@ article.active {
 }
 
 .blog-post-item>a:hover .blog-item-title {
-    color: var(--orange-yellow-crayola);
+    color: var(--focus-outline);
 }
 
 .blog-text {
@@ -1245,7 +1170,7 @@ article.active {
 }
 
 .form-input {
-    color: var(--white2);
+    color: var(--main-text-2);
     font-size: var(--fs6);
     font-weight: var(--fw400);
     padding: 13px 20px;
@@ -1259,7 +1184,7 @@ article.active {
 }
 
 .form-input:focus {
-    border-color: var(--orange-yellow-crayola);
+    border-color: var(--focus-outline);
 }
 
 .form-input:focus:invalid {
@@ -1282,7 +1207,7 @@ textarea.form-input::-webkit-realizer {
     position: relative;
     width: 100%;
     background: var(--border-gradient-onyx);
-    color: var(--orange-yellow-crayola);
+    color: var(--focus-outline);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1443,11 +1368,11 @@ textarea.form-input::-webkit-realizer {
         border-radius: 20px 20px 0 0;
     }
 
-    .navbar-list {
+    .nav-list {
         gap: 20px;
     }
 
-    .navbar-link {
+    .nav-button {
         --fs8: 14px;
     }
 
@@ -1622,7 +1547,7 @@ textarea.form-input::-webkit-realizer {
         gap: 30px 15px;
     }
 
-    .navbar-link {
+    .nav-button {
         --fs8: 15px;
     }
 
@@ -1663,7 +1588,7 @@ textarea.form-input::-webkit-realizer {
     }
 
     .filter-item button.active {
-        color: var(--orange-yellow-crayola);
+        color: var(--focus-outline);
     }
 
     .project-list,
@@ -1717,12 +1642,12 @@ textarea.form-input::-webkit-realizer {
         box-shadow: none;
     }
 
-    .navbar-list {
+    .nav-list {
         gap: 30px;
         padding: 0 20px;
     }
 
-    .navbar-link {
+    .nav-button {
         font-weight: var(--fw500);
     }
 
@@ -1755,11 +1680,11 @@ textarea.form-input::-webkit-realizer {
     }
 
     body::-webkit-scrollbar-track {
-        background: var(--smoky-black);
+        background: var(--body-background);
     }
 
     body::-webkit-scrollbar-thumb {
-        border: 5px solid var(--smoky-black);
+        border: 5px solid var(--body-background);
         background: hsla(0, 0%, 100%, .1);
         border-radius: 20px;
         box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, .11), inset -1px -1px 0 hsla(0, 0%, 100%, .11);
