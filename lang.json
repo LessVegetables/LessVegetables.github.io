@@ -1,17 +1,17 @@
 {
-    "navbar-about": {
+    "about": {
         "en": "About",
         "ru": "Обо Мне"
     },
-    "navbar-resume": {
+    "resume": {
         "en": "Resume",
         "ru": "Резюме"
     },
-    "navbar-projects": {
+    "projects": {
         "en": "Projects",
         "ru": "Проекты"
     },
-    "navbar-contact": {
+    "contact": {
         "en": "Contact",
         "ru": "Контакт"
     },
