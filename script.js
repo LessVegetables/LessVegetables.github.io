@@ -51,16 +51,19 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentLang = localStorage.getItem("lang") || "en";
     let translations = {};
 
-    // Load translations from lang.json file
-    fetch("lang.json")
-        .then((response) => response.json())
-        .then((data) => {
-            translations = data;
-            applyTranslations(currentLang);
-        })
-        .catch((error) =>
-            console.error("Error loading lang.json:", error)
-        );
+    // Load translations from all the .json files
+    function loadTranslations() {
+        const files = ["general", "about", "home", "projects"];
+        const fetchPromises = files.map(file => fetch(`lang/${file}.json`).then(res => res.json()));
+
+        Promise.all(fetchPromises)
+            .then(dataArray => {
+                // Merge all loaded JSON objects into translations
+                translations = Object.assign({}, ...dataArray);
+                applyTranslations(currentLang);
+            })
+            .catch(error => console.error("Error loading translation files:", error));
+    }
 
     // Toggle language when button is clicked
     document.getElementById("lang-toggle").addEventListener("click", function () {
@@ -78,6 +81,10 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
+    // Load translations on page load
+    loadTranslations();
+
 });
 
 
