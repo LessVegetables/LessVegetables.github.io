@@ -1,6 +1,6 @@
 {
-    "home.json": {
-        "en": "Home",
-        "ru": "Главная"
+    "home-pitch": {
+        "en": "I'm a passionate Computer Science student who loves creating diverse tech solutions—from desktop and mobile apps to websites, bots, and exploring emerging AI trends. I focus on quality, effective teamwork, and best practices, always striving to deliver meaningful, well-crafted work.",
+        "ru": "Я студент-программист, увлекаюсь разработкой мобильных и десктопных приложений, ботов и веб-сервисов. Делаю упор на качество, эффективную командную работу и лучшие практики, всегда стремясь создавать полезные и хорошо продуманные решения."
     }
 }
