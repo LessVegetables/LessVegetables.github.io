@@ -3,8 +3,40 @@
         "en": "About Me",
         "ru": "Обо Мне"
     },
-    "about-pitch": {
-        "en": "I'm a passionate Computer Science student who loves creating diverse tech solutions—from desktop and mobile apps to websites, bots, and exploring emerging AI trends. I focus on quality, effective teamwork, and best practices, always striving to deliver meaningful, well-crafted work.",
-        "ru": "Я программист. Прогаю программы."
+    "about-pitch-1": {
+        "en": "As a student with a wide range of tech interests, I thrive on the challenge of creating and improving digital solutions across different platforms. Whether I'm developing desktop or mobile apps, building websites, or experimenting with Telegram bots and early-stage AI projects, I bring creativity and dedication to every task.",
+        "ru": "Как студент с широким кругом технических интересов, я получаю удовольствие от создания и совершенствования цифровых решений для разных платформ. Разработка настольных и мобильных приложений, создание веб-сайтов, ботов, эксперименты с ИИ — всё это даёт мне возможность проявлять креативность и применять свои навыки."
+    },
+    "about-pitch-2": {
+        "en": "I believe in the power of good processes—adhering to best practices like proper version control and thorough documentation—to ensure every project is executed with quality and precision. I’m a strong team player who can also take on solo projects, adapting quickly and learning continuously along the way. My diverse experience might not yet come with a single 'hidden ace,' but it gives me a visionary edge that enables me to contribute fresh ideas and a solid work ethic to any challenge.",
+        "ru": "Я убеждён, что хороший процесс — это залог качественного результата, поэтому придерживаюсь лучших практик, таких как грамотное управление версиями кода и подробная документация. Мне комфортно работать в команде, но я также могу самостоятельно реализовывать проекты, быстро адаптируясь и постоянно обучаясь. У меня нет 'коронного' навыка, но широкий опыт даёт мне стратегическое видение, позволяя предлагать свежие идеи и вносить реальный вклад в работу команды."
+    },
+    "education": {
+        "en": "Education",
+        "ru": "Образование"
+    },
+    "iir-nsu": {
+        "en": "Institute of Robotics • Novosibirsk State University",
+        "ru": "Институт Интеллектуальной Робототехники • НГУ"
+    },
+    "mmf-nsu": {
+        "en": "MMF • Novosibirsk State University",
+        "ru": "Механико-Математический Факультет • НГУ"
+    },
+    "sesc-nsu": {
+        "en": "High School: Specialized Edcation Center • Novosibirsk State University",
+        "ru": "Школа: Специализированный Учебный Научный Центр • НГУ"
+    },
+    "iir-nsu-text": {
+        "en": "Dada, ya tut uchus'",
+        "ru": "Дада, я тут учусь"
+    },
+    "mmf-nsu-text": {
+        "en": "Dada, ya tut uchilsya",
+        "ru": "Дада, я тут учился"
+    },
+    "sesc-nsu-text": {
+        "en": "Dada, ya tut uchilsya",
+        "ru": "Дада, я тут учился"
     }
 }

@@ -2,5 +2,9 @@
     "tags": {
         "en": "Tags",
         "ru": "Тэги"
+    },
+    "filter-all": {
+        "en": "All",
+        "ru": "Все"
     }
 }
