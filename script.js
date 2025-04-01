@@ -47,8 +47,29 @@ document.addEventListener("DOMContentLoaded", function () {
         document.documentElement.setAttribute("data-theme", theme);
     }
 
+    // // language change // 
+    // let currentLang = localStorage.getItem("lang") || "en";
+    // let translations = {};
+
     // language change // 
-    let currentLang = localStorage.getItem("lang") || "en";
+    // Check if a language has been saved previously
+    let currentLang = localStorage.getItem("lang");
+
+    // If no saved language, auto-detect from the browser
+    if (!currentLang) {
+        // Detect the user's language (e.g., "en-US", "ru-RU")
+        const defaultLang = navigator.languages ? navigator.languages[0] : navigator.language;
+        // Normalize (e.g., "en-US" becomes "en")
+        let langCode = defaultLang.split('-')[0];
+        // Validate the language, default to "en" if not supported
+        if (!["en", "ru"].includes(langCode)) {
+            langCode = "en";
+        }
+        currentLang = langCode;
+        // Save the detected language for future visits
+        localStorage.setItem("lang", currentLang);
+    }
+
     let translations = {};
 
     // Load translations from all the .json files

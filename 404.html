@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting…</title>
+    <script>
+        // Extract the language code from the URL (e.g., "/ru" or "/en")
+        const pathLang = window.location.pathname.split('/')[1];
+        // Check if the code is one of supported languages
+        if (["ru", "en"].includes(pathLang)) {
+            localStorage.setItem("lang", pathLang);
+        }
+        // Redirect to the homepage
+        window.location.replace("/");
+    </script>
+</head>
+
+<body>
+    <p>Redirecting…</p>
+</body>
+
+</html>
