@@ -184,7 +184,39 @@ const filterFunc = function (selectedValue) {
     }
 }
 
-//Enabling filter button for larger screens 
+// const filterFunc = function (selectedValue) {
+//     const activeCards = document.querySelectorAll('[data-filter-item].active');
+//     const newCards = document.querySelectorAll(`[data-filter-item][data-category="${selectedValue}"]`);
+
+//     // If "all" is selected, show everything
+//     if (selectedValue === "all") {
+//         newCards = document.querySelectorAll('[data-filter-item]');
+//     }
+
+//     // Animate existing cards off-screen
+//     activeCards.forEach(card => {
+//         card.classList.add('card-swing-out');
+//         card.addEventListener('animationend', () => {
+//             card.classList.remove('active', 'card-swing-out');
+//             card.style.display = 'none';
+//         }, { once: true });
+//     });
+
+//     // Delay for outgoing animation to complete
+//     setTimeout(() => {
+//         newCards.forEach(card => {
+//             card.style.display = 'block';
+//             card.classList.add('card-swing-in');
+//             card.addEventListener('animationend', () => {
+//                 card.classList.remove('card-swing-in');
+//             }, { once: true });
+//             card.classList.add('active');
+//         });
+//     }, 500); // Delay matches swingOut duration
+// };
+
+
+//Enabling filter button for smaller screens 
 
 let lastClickedBtn = filterBtn[0];
 

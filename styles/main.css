@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("project-cards.css");
+@import url("about.css");
+@import url("sidebar.css");
+
+
 
 :root {
     /* Background gradients */
@@ -15,6 +20,7 @@
     --jet: hsl(0, 0%, 22%);
     --onyx: hsl(240, 1%, 17%);
     --icon-box-background: hsl(240, 2%, 13%);
+    --icon-box-background-hover: hsl(210, 100%, 66%);
     --sidebar-background: hsl(240, 2%, 12%);
     --body-background: hsl(0, 0%, 7%);
     /*smoky black*/
@@ -27,6 +33,7 @@
     /* --blue-crayola aka orange-yellow-crayola*/
     --focus-outline: hsl(210, 100%, 66%);
     --icon-box: hsl(210, 100%, 66%);
+    --icon-box-hover: hsl(240, 2%, 13%);
     --vegas-blue: hsl(210, 54%, 58%);
 
     --light-gray: hsl(0, 0%, 84%);
@@ -77,6 +84,7 @@
     --jet: hsl(0, 0%, 88%);
     --onyx: hsl(0, 0%, 95%);
     --icon-box-background: hsl(0, 0%, 98%);
+    --icon-box-background-hover: hsl(210, 100%, 40%);
     --sidebar-background: hsl(0, 0%, 99%);
     --body-background: hsl(0, 0%, 100%);
 
@@ -89,6 +97,7 @@
     --selection-background: hsl(210, 100%, 40%);
     --focus-outline: hsl(210, 100%, 40%);
     --icon-box: hsl(210, 100%, 40%);
+    --icon-box-hover: hsl(0, 0%, 98%);
     --vegas-blue: hsl(210, 54%, 40%);
 
     /* Retain or adjust other variables as needed */
@@ -200,6 +209,13 @@ article {
     box-shadow: var(--shadow1);
     z-index: 1;
     object-fit: cover;
+    transition: all 0.3s ease;
+    /* Adding transition here */
+}
+
+.icon-box[data-is-link="true"]:hover {
+    color: var(--icon-box-hover);
+    /* Changes the icon color */
 }
 
 .icon-box::before {
@@ -209,33 +225,29 @@ article {
     background: var(--icon-box-background);
     border-radius: inherit;
     z-index: -1;
+    transition: background 0.3s ease;
+    /* Transition the background on hover */
+}
+
+.icon-box[data-is-link="true"]:hover::before {
+    background: var(--icon-box-background-hover);
+    /* Changes the background on hover */
 }
 
 .icon-box ion-icon {
     --ionicon-stroke-width: 35px;
-    /* color: var(--icon-box); */
-    /* width: 80%; */
-    /* height: 80%; */
-    /* object-fit: cover; */
 }
 
 .icon-box a {
-    /* Keeps the default icon color */
     color: inherit;
-    /* Removes any underline */
     text-decoration: none;
     transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .icon-box a:visited {
-    /* Prevents the color from changing after being visited */
     color: inherit;
 }
 
-.icon-box::before a :hover {
-    color: #007bff;
-    transform: scale(2);
-}
 
 article {
     display: none;
@@ -539,7 +551,7 @@ article.active {
 
 .about-text {
     color: var(--main-text-1);
-    font-size: var(--fs6);
+    font-size: var(--fs4);
     font-weight: var(--fw300);
     line-height: 1.6;
 }
@@ -802,13 +814,17 @@ article.active {
 }
 
 .timeline-list span {
-    color: var(--vegas-gold);
+    color: var(--vegas-blue);
     font-weight: var(--fw400);
     line-height: 1.6;
 }
 
 .timeline-item {
     position: relative;
+}
+
+.timeline-date {
+    color: var(--vegas-blue);
 }
 
 .timeline-item:not(:last-child) {
@@ -961,29 +977,6 @@ article.active {
     margin-bottom: 10px;
 }
 
-.project-item {
-    display: none;
-}
-
-.project-item.active {
-    display: block;
-    animation: scaleUp .25s ease forwards;
-}
-
-@keyframes scaleUp {
-    0% {
-        transform: scale(0.5);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-.project-item>a {
-    width: 100%;
-}
-
 .project-img {
     position: relative;
     width: 100%;
@@ -1016,6 +1009,7 @@ article.active {
     transform: scale(1.1);
 }
 
+
 .project-item>a:hover .project-img::before {
     background: hsla(0, 0%, 0%, .5);
 }
@@ -1044,19 +1038,6 @@ article.active {
 
 .project-item-icon-box ion-icon {
     --ionicon-stroke-width: 50px;
-}
-
-.project-title,
-.project-category {
-    margin-left: 10px;
-}
-
-.project-title {
-    color: var(--main-text-2);
-    font-size: var(--fs5);
-    font-weight: var(--fw400);
-    text-transform: capitalize;
-    line-height: 1.3;
 }
 
 .project-category {
