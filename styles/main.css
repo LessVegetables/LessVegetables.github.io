@@ -963,29 +963,6 @@ article.active {
     margin-bottom: 10px;
 }
 
-.project-item {
-    display: none;
-}
-
-.project-item.active {
-    display: block;
-    animation: scaleUp .25s ease forwards;
-}
-
-@keyframes scaleUp {
-    0% {
-        transform: scale(0.5);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-.project-item>a {
-    width: 100%;
-}
-
 .project-img {
     position: relative;
     width: 100%;
@@ -1017,6 +994,7 @@ article.active {
 .project-item>a:hover img {
     transform: scale(1.1);
 }
+
 
 .project-item>a:hover .project-img::before {
     background: hsla(0, 0%, 0%, .5);
