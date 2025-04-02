@@ -34,7 +34,7 @@
                 <ul class="contacts-list">
                     <li class="contact-item">
                         <a href="mailto:danielgehrman@icloud.com" target="_blank">
-                            <div class="icon-box" href="mailto:danielgehrman@icloud.com">
+                            <div class="icon-box" href="mailto:danielgehrman@icloud.com" data-is-link="true">
                                 <ion-icon name="mail-outline"></ion-icon>
                             </div>
                         </a>
@@ -49,7 +49,7 @@
 
                     <li class="contact-item">
                         <a href="https://t.me/danielgehrman" target="_blank">
-                            <div class="icon-box">
+                            <div class="icon-box" data-is-link="true">
                                 <!-- <i class="fab fa-telegram"></i> -->
                                 <ion-icon name="phone-portrait-outline"></ion-icon>
                             </div>
@@ -57,15 +57,16 @@
 
                         <div class="contact-info">
                             <p class="contact-title">Telegram</p>
-
-                            <a href="https://t.me/danielgehrman" class="contact-link">@danielgehrman</a>
+                            <p class="contact-link">@danielgehrman</p>
                         </div>
                     </li>
 
                     <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="school-outline"></ion-icon>
-                        </div>
+                        <a href="https://www.nsu.ru/n/" target="_blank">
+                            <div class="icon-box" data-is-link="true">
+                                <ion-icon name="school-outline"></ion-icon>
+                            </div>
+                        </a>
 
                         <div class="contact-info">
                             <p class="contact-title" data-key="university">University</p>
@@ -76,7 +77,7 @@
 
                     <li class="contact-item">
                         <a href="https://github.com/LessVegetables" target="_blank">
-                            <div class="icon-box">
+                            <div class="icon-box" data-is-link="true">
                                 <ion-icon name="logo-github"></ion-icon>
                             </div>
                         </a>
@@ -89,7 +90,7 @@
                     </li>
 
                     <li class="contact-item">
-                        <div class="icon-box">
+                        <div class="icon-box" data-is-link="false">
                             <ion-icon name="location-outline"></ion-icon>
                         </div>
 
@@ -101,7 +102,7 @@
                     </li>
                 </ul>
 
-                <div class="separator"></div>
+                <!-- <div class="separator"></div> -->
 
                 <ul class="social-list">
                     <li class="social-item"><a href="#" class="social-link"><ion-icon
@@ -216,9 +217,10 @@
                                 </div>
 
                                 <!-- Image (slanted) -->
-                                <!-- <div class="project-card-image">
-                                    <img src="https://i.postimg.cc/qRHpHMyd/project-1.jpg" alt="ChatTutor Screenshot" />
-                                </div> -->
+                                <div class="project-card-image" data-project-id="chat-tutor">
+                                    <img src="assets//images/chat-1.png" alt="ChatTutor Logo" />
+                                    <img src="assets//images/chat-2.png" alt="Telegram Logo" />
+                                </div>
                             </a>
                         </li>
 
@@ -373,6 +375,10 @@
                     </ul>
                 </section> -->
 
+                <div class="download-resume">
+                    <button class="download-resume-button" data-key="resume-button"></button>
+                </div>
+
                 <section class="timeline">
                     <div class="title-wrapper">
                         <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
@@ -383,7 +389,7 @@
                     <ol class="timeline-list">
                         <li class="timeline-item">
                             <h4 class="h4 timeline-item-title" data-key="iir-nsu"></h4>
-                            <span class="h5 timeline-date">2023 - 2027</span>
+                            <span>2023 - 2027</span>
                             <p class="timeline-text" data-key="iir-nsu-text"></p>
                         </li>
 
