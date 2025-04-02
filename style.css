@@ -539,7 +539,7 @@ article.active {
 
 .about-text {
     color: var(--main-text-1);
-    font-size: var(--fs6);
+    font-size: var(--fs4);
     font-weight: var(--fw300);
     line-height: 1.6;
 }
