@@ -1,0 +1,128 @@
+/* Container for the entire card */
+.project-card {
+    /* Adjust the width/height as needed */
+
+    width: 100%;
+    height: 200px;
+    max-width: 400px;
+
+    position: relative;
+    margin: 0 auto;
+    /* margin: 1rem; */
+
+    /* Gradient background (sample) */
+    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+
+    /* Round corners, subtle shadow, and transition for hover effect */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* Ensure the slanted image doesn't overflow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Make the entire card clickable */
+.project-card-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    /* Inherit text color so the link doesn't turn blue, etc. */
+    position: relative;
+}
+
+/* On hover, enlarge the card slightly and intensify the shadow */
+.project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Text content container */
+.project-card-content {
+    /* Position text on the left side */
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    bottom: 1rem;
+    /* So the tag can be placed at bottom-left easily */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+    /* Ensure text is above the background and behind the image if needed */
+}
+
+/* Project Title */
+.project-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    /* You can add more style here if desired */
+}
+
+/* Project Tag bubble */
+.project-tag {
+    align-self: flex-start;
+    /* Ensures the tag bubble is on the left */
+    padding: 0.25rem 0.75rem;
+    font-size: 0.85rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    /* Semi-transparent white bubble */
+    border-radius: 9999px;
+    /* Fully rounded pill shape */
+    color: #fff;
+    /* Contrasting text color */
+    /* Additional styling if needed */
+}
+
+/* Image container (on the right) */
+.project-card-image {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(-5deg);
+    /* Slant the image a bit */
+    width: 160px;
+    /* Adjust as desired */
+    height: 120px;
+    /* Adjust as desired */
+    overflow: visible;
+    /* So the slant doesn't get clipped */
+    z-index: 2;
+    /* Make sure it’s above the gradient background */
+}
+
+/* Actual image styling */
+.project-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* You can also animate the slant or scale on hover if you like */
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Enlarge/rotate the image slightly on card hover */
+.project-card:hover .project-card-image img {
+    transform: scale(1.05);
+}
+
+
+/* Gradients for each project card */
+.project-card[data-project-id="chat-tutor"] {
+    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.project-card[data-project-id="umovie"] {
+    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+}
+
+.project-card[data-project-id="ulp"] {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.project-card[data-project-id="ml"] {
+    background: linear-gradient(135deg, #c94b4b 0%, #4b134f 100%);
+}
