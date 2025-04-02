@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-key="name">Daniel Gehrman</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon"> -->
 </head>
 
 <body>
@@ -162,8 +162,7 @@
 
                 <section class="projects">
                     <ul class="filter-list">
-                        <li class="filter-item"><button class="active" data-filter-btn
-                                data-key="filter-all">All</button></li>
+                        <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
                         <li class="filter-item"><button data-filter-btn>Telegram Bots</button></li>
                         <li class="filter-item"><button data-filter-btn>Desktop</button></li>
                         <li class="filter-item"><button data-filter-btn>Mobile</button></li>
@@ -189,7 +188,7 @@
                     </div>
 
                     <ul class="project-list">
-                        <li class="project-item active" data-filter-item data-category="telegram bots"
+                        <!-- <li class="project-item active" data-filter-item data-category="telegram bots"
                             data-project-id="chat-tutor">
                             <a href="#">
                                 <figure class="project-img">
@@ -204,52 +203,106 @@
                                 <h3 class="project-title">ChatTutor</h3>
                                 <p class="project-category">Telegram Bots</p>
                             </a>
-                        </li>
+                        </li> -->
 
-                        <li class="project-item active" data-filter-item data-category="desktop"
-                            data-project-id="umovie">
-                            <a href="#">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-                                    <img src="https://i.postimg.cc/bNrcM2Wt/project-2.png" alt="uMovie" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">uMovie</h3>
-                                <p class="project-category">Desktop</p>
+                        <li class="project-card active" data-filter-item data-category="telegram bots"
+                            data-project-id="chat-tutor">
+                            <a href="https://github.com/LessVegetables/language-bot" target="_blank"
+                                class="project-card-link">
+                                <!-- Text Content -->
+                                <div class="project-card-content">
+                                    <h3 class="project-title">ChatTutor</h3>
+                                    <span class="project-tag">Telegram Bot</span>
+                                </div>
+
+                                <!-- Image (slanted) -->
+                                <!-- <div class="project-card-image">
+                                    <img src="https://i.postimg.cc/qRHpHMyd/project-1.jpg" alt="ChatTutor Screenshot" />
+                                </div> -->
                             </a>
                         </li>
 
+                        <li class="project-card active" data-filter-item data-category="desktop"
+                            data-project-id="game-of-life">
+                            <a href="https://github.com/LessVegetables/game-of-life" target="_blank"
+                                class="project-card-link">
+                                <!-- Text Content -->
+                                <div class="project-card-content">
+                                    <h3 class="project-title">Game Of Life</h3>
+                                    <span class="project-tag">Desktop</span>
+                                </div>
 
-                        <li class="project-item active" data-filter-item data-category="mobile" data-project-id="ulp">
-                            <a href="#">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-
-                                    <img src="https://i.postimg.cc/jSJVqYsq/project-3.jpg" alt="ULP" loading="lazy">
-                                </figure>
-
-                                <h3 class="project-title">ULP</h3>
-                                <p class="project-category">Mobile</p>
+                                <!-- Image (slanted) -->
+                                <div class="project-card-image">
+                                    <img src="assets//images/gof-1.png" alt="GameOfLife home screen" />
+                                    <img src="assets//images/gof-2.png" alt="GameOfLife gameplay" />
+                                </div>
                             </a>
                         </li>
 
-                        <li class="project-item active" data-filter-item data-category="ml" data-project-id="ml">
+                        <li class="project-card active" data-filter-item data-category="desktop"
+                            data-project-id="umovie" data-project-status="unfinished">
+                            <a href="https://github.com/BodgeDook/UPPRPO-Project-NSU" target="_blank"
+                                class="project-card-link">
+                                <!-- Text Content -->
+                                <div class="project-card-content">
+                                    <h3 class="project-title">uMovie</h3>
+                                    <span class="project-tag">Desktop</span>
+                                </div>
+                                <!-- Image (slanted) -->
+                                <div class="project-card-image">
+                                    <img src="assets/images/wip.jpg" alt="WorkInProgress" />
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="project-card active" data-filter-item data-category="mobile" data-project-id="ulp"
+                            data-project-status="unfinished">
+                            <a href="https://github.com/Universal-Loyalty-Program" target="_blank"
+                                class="project-card-link">
+                                <!-- Text Content -->
+                                <div class="project-card-content">
+                                    <h3 class="project-title">ULP</h3>
+                                    <span class="project-tag">Mobile</span>
+                                </div>
+                                <!-- Image (slanted) -->
+                                <div class="project-card-image">
+                                    <img src="assets/images/wip.jpg" alt="WorkInProgress" />
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="project-card active" data-filter-item data-category="ml" data-project-id="ml"
+                            data-project-status="unfinished">
+                            <a href="https://github.com/LessVegetables/ml" target="_blank" class="project-card-link">
+                                <!-- Text Content -->
+                                <div class="project-card-content">
+                                    <h3 class="project-title">Virtual Shopping</h3>
+                                    <span class="project-tag">ML</span>
+                                </div>
+                                <!-- Image (slanted) -->
+                                <div class="project-card-image">
+                                    <img src="assets/images/wip.jpg" alt="WorkInProgress" />
+                                </div>
+                            </a>
+                        </li>
+
+                        <!-- 
+
+                        <li class="project-tile active" data-filter-item data-category="ml" data-project-id="ml">
                             <a href="#">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
                                         <ion-icon name="eye-outline"></ion-icon>
                                     </div>
 
-                                    <img src="https://i.postimg.cc/dtpXxNGb/project-4.png" alt="ML" loading="lazy">
+                                    <img src="assets/images/wip.jpg" alt="ML" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Virtual Shopping</h3>
                                 <p class="project-category">ML</p>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </section>
             </article>
