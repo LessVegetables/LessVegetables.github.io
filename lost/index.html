@@ -1,0 +1,110 @@
+<!-- /lost/index.html -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Lost & Found | d.gehrman.me</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.5;
+        }
+
+        .card {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 1.5rem 1.25rem;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+        }
+
+        h1 {
+            margin: 0 0 .25rem 0;
+            font-size: 1.35rem;
+        }
+
+        .item {
+            font-weight: 600;
+        }
+
+        .cta {
+            margin-top: 1rem;
+            padding: .85rem 1rem;
+            border-radius: 10px;
+            border: 1px solid #111;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .small {
+            color: #666;
+            font-size: .9rem;
+            margin-top: .75rem;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="card">
+        <h1>Lost item</h1>
+        <p>Hi! If you found this <span class="item" id="itemName">item</span>, please help it get back to its owner.</p>
+
+        <div id="ownerMsg"></div>
+
+        <div class="center">
+            <a id="contactLink" class="cta" href="#">Contact the owner</a>
+            <p class="small" id="altContact"></p>
+        </div>
+
+        <p class="small">No smartphone? You can email: <span id="fallbackEmail"></span></p>
+    </main>
+
+    <script>
+        // Map short IDs to per-item details (edit to taste)
+        const ITEMS = {
+            wallet: {
+                label: "wallet",
+                message: "Thank you for finding my wallet. I'm nearby and can pick it up.",
+                contact_url: "mailto:daniel@example.com?subject=Found%20wallet",
+                alt: "If the button doesn't work, email me.",
+                fallback_email_html: '<a href="mailto:daniel@example.com">daniel@example.com</a>'
+            },
+            bp: {
+                label: "battery pack",
+                message: "Appreciate it! This power bank is important to me.",
+                contact_url: "mailto:daniel@example.com?subject=Found%20battery%20pack",
+                alt: "Tap the button to email me.",
+                fallback_email_html: '<a href="mailto:daniel@example.com">daniel@example.com</a>'
+            }
+            // Add more items here...
+        };
+
+        const params = new URLSearchParams(location.search);
+        const id = params.get("i");
+
+        const item = ITEMS[id] || {
+            label: "item",
+            message: "Thanks for helping! Please reach out so I can arrange pickup.",
+            contact_url: "mailto:daniel@example.com?subject=Found%20item",
+            alt: "Tap the button to email me.",
+            fallback_email_html: '<a href="mailto:daniel@example.com">daniel@example.com</a>'
+        };
+
+        document.getElementById("itemName").textContent = item.label;
+        document.getElementById("ownerMsg").textContent = item.message;
+        document.getElementById("contactLink").href = item.contact_url;
+        document.getElementById("altContact").textContent = item.alt;
+        document.getElementById("fallbackEmail").innerHTML = item.fallback_email_html;
+    </script>
+</body>
+
+</html>
