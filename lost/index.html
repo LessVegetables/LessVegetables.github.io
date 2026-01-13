@@ -74,16 +74,16 @@
             wallet: {
                 label: "wallet",
                 message: "Thank you for finding my wallet. I'm nearby and can pick it up.",
-                contact_url: "mailto:daniel@example.com?subject=Found%20wallet",
+                contact_url: "mailto:daniel@gehrman.me?subject=Found%20wallet",
                 alt: "If the button doesn't work, email me.",
-                fallback_email_html: '<a href="mailto:daniel@example.com">daniel@example.com</a>'
+                fallback_email_html: '<a href="mailto:daniel@gehrman.me">daniel@gehrman.me</a>'
             },
             bp: {
                 label: "battery pack",
                 message: "Appreciate it! This power bank is important to me.",
-                contact_url: "mailto:daniel@example.com?subject=Found%20battery%20pack",
+                contact_url: "mailto:daniel@gehrman.me?subject=Found%20battery%20pack",
                 alt: "Tap the button to email me.",
-                fallback_email_html: '<a href="mailto:daniel@example.com">daniel@example.com</a>'
+                fallback_email_html: '<a href="mailto:daniel@gehrman.me">daniel@gehrman.me</a>'
             }
             // Add more items here...
         };
@@ -94,9 +94,9 @@
         const item = ITEMS[id] || {
             label: "item",
             message: "Thanks for helping! Please reach out so I can arrange pickup.",
-            contact_url: "mailto:daniel@example.com?subject=Found%20item",
+            contact_url: "mailto:daniel@gehrman.me?subject=Found%20item",
             alt: "Tap the button to email me.",
-            fallback_email_html: '<a href="mailto:daniel@example.com">daniel@example.com</a>'
+            fallback_email_html: '<a href="mailto:daniel@gehrman.me">daniel@gehrman.me</a>'
         };
 
         document.getElementById("itemName").textContent = item.label;
