@@ -3,4 +3,4 @@
 /assets/ionicons
 *.code-workspace
 /.vscode
-./archive/*
+/archive
