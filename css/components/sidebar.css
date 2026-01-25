@@ -169,14 +169,14 @@
         gap: 25px;
     }
 
-    .avatar-box {
+    /* .avatar-box {
         border-radius: 30px;
         clip-path: none;
     }
 
     .avatar-box img {
         width: 150px;
-    }
+    } */
 
     .info-content .name {
         margin-bottom: 15px;
@@ -187,9 +187,10 @@
     }
 
     .info-more-btn {
-        top: -30px;
-        right: -30px;
-        padding: 10px 15px;
+        top: 0;
+        /* -30px; */
+        right: 0;
+        /* padding: 10px 15px; */
     }
 
     .info-more-btn span {
@@ -233,9 +234,9 @@
         flex-direction: column;
     }
 
-    .avatar-box img {
+    /* .avatar-box img {
         width: 150px;
-    }
+    } */
 
     .info-content .name {
         white-space: nowrap;

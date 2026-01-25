@@ -3,6 +3,8 @@
     --bg-gradient-onyx: linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%);
     --bg-gradient-jet: linear-gradient(to bottom right, hsla(240, 1%, 18%, .251) 3%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
 
+    --bg-navbar: hsla(240, 1%, 17%, .75);
+
     /* Accent gradients (blue) */
     --bg-gradient-1: linear-gradient(to bottom right, hsl(210, 100%, 65%) 0%, hsla(210, 100%, 60%, 0) 50%);
     --bg-gradient-2: linear-gradient(135deg, hsla(210, 100%, 65%, .251) 0%, hsla(210, 100%, 60%, 0) 59.86%), hsl(240, 2%, 13%);
@@ -63,6 +65,8 @@
     /* Lighter background gradients */
     --bg-gradient-onyx: linear-gradient(to bottom right, hsl(0, 0%, 98%) 3%, hsl(0, 0%, 95%) 97%);
     --bg-gradient-jet: linear-gradient(to bottom right, hsla(0, 0%, 96%, .251) 3%, hsla(0, 0%, 94%, 0) 100%), hsl(0, 0%, 95%);
+
+    --bg-navbar: hsla(240, 1%, 17%, .75);
 
     /* Blue accents adjusted for light background */
     --bg-gradient-1: linear-gradient(to bottom right, hsl(210, 100%, 85%) 0%, hsla(210, 100%, 80%, 0) 50%);

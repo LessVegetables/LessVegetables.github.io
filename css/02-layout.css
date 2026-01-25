@@ -4,24 +4,53 @@ main {
     min-width: 259px;
 }
 
+/* .main-content {
+    position: relative;
+    min-height: 100%;
+} */
+
+/* make pages overlap */
+/* .main-content>article {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+} */
+
+
+.sidebar {
+    position: relative;
+    z-index: 10;
+}
+
 .sidebar,
 article {
     background: var(--sidebar-background);
     border: 1px solid var(--jet);
     border-radius: 20px;
     box-shadow: var(--shadow1);
-    z-index: 1;
+    /* z-index: 1; */
     padding: 15px;
 }
 
 article {
     display: none;
+    margin-bottom: 0;
 }
 
+article.exiting,
 article.active {
     display: block;
-    animation: fade .5s ease backwards;
+    pointer-events: none;
 }
+
+article.active .article-content {
+    animation: fade-in 0.15s ease both;
+}
+
+article.exiting .article-content {
+    animation: fade-out 0.15s ease forwards;
+}
+
 
 .separator {
     width: 100%;
@@ -34,6 +63,7 @@ article.active {
 .article-title {
     position: relative;
     padding-bottom: 7px;
+    margin-top: 0px;
     margin-bottom: 30px;
 }
 
