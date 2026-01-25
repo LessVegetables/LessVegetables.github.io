@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-key="name">Daniel Gehrman</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon"> -->
 </head>
 
@@ -33,8 +33,8 @@
 
                 <ul class="contacts-list">
                     <li class="contact-item">
-                        <a href="mailto:danielgehrman@icloud.com" target="_blank">
-                            <div class="icon-box" href="mailto:danielgehrman@icloud.com" data-is-link="true">
+                        <a href="mailto:daniel@gehrman.me" target="_blank" data-key="email-link" data-attr="href">
+                            <div class="icon-box" data-is-link="true">
                                 <ion-icon name="mail-outline"></ion-icon>
                             </div>
                         </a>
@@ -43,7 +43,7 @@
                         <div class="contact-info">
                             <p class="contact-title" data-key="email">Email</p>
 
-                            <div class="contact-link" data-key="emailAddress">danielgehrman@icloud.com</div>
+                            <div class="contact-link" data-key="emailAddress">daniel@gehrman.me</div>
                         </div>
                     </li>
 
@@ -62,11 +62,17 @@
                     </li>
 
                     <li class="contact-item">
-                        <a href="https://www.nsu.ru/n/" target="_blank">
+                        <a href="https://www.nsu.ru/n/" target="_blank" data-key="university-link" data-attr="href">
                             <div class="icon-box" data-is-link="true">
                                 <ion-icon name="school-outline"></ion-icon>
                             </div>
                         </a>
+
+                        <!-- <a href="https://www.nsu.ru/n/" target="_blank">
+                            <div class="icon-box" data-is-link="true">
+                                <ion-icon name="school-outline"></ion-icon>
+                            </div>
+                        </a> -->
 
                         <div class="contact-info">
                             <p class="contact-title" data-key="university">University</p>
@@ -149,47 +155,48 @@
             </nav> -->
 
             <article class="home active" data-page="home">
-                <header>
-                    <h2 class="h2 article-title" data-key="home">Home</h2>
-                </header>
+                <div class="article-content">
+                    <header>
+                        <h2 class="h2 article-title" data-key="home">Home</h2>
+                    </header>
 
-                <section class="about-text" data-key="home-pitch">
-                    <p>Loading...</p>
-                </section>
+                    <section class="about-text" data-key="home-pitch">
+                        <p>Loading...</p>
+                    </section>
 
-                <header>
-                    <h2 class="h2 article-title" data-key="projects">Projects</h2>
-                </header>
+                    <header>
+                        <h2 class="h2 article-title" data-key="projects">Projects</h2>
+                    </header>
 
-                <section class="projects">
-                    <ul class="filter-list">
-                        <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
-                        <li class="filter-item"><button data-filter-btn>Telegram Bots</button></li>
-                        <li class="filter-item"><button data-filter-btn>Desktop</button></li>
-                        <li class="filter-item"><button data-filter-btn>Mobile</button></li>
-                        <li class="filter-item"><button data-filter-btn>ML</button></li>
-                    </ul>
-
-                    <div class="filter-select-box">
-                        <button class="filter-select " data-select>
-                            <div class="select-value" data-select-value>Select Category</div>
-
-                            <div class="select-icon">
-                                <ion-icon name="chevron-down"></ion-icon>
-                            </div>
-                        </button>
-
-                        <ul class="select-list">
-                            <li class="select-item"><button data-select-item>All</button></li>
-                            <li class="select-item"><button data-select-item>Telegram Bots</button></li>
-                            <li class="select-item"><button data-select-item>Desktop</button></li>
-                            <li class="select-item"><button data-select-item>Mobile</button></li>
-                            <li class="select-item"><button data-select-item>ML</button></li>
+                    <section class="projects">
+                        <ul class="filter-list">
+                            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+                            <li class="filter-item"><button data-filter-btn>Telegram Bots</button></li>
+                            <li class="filter-item"><button data-filter-btn>Desktop</button></li>
+                            <li class="filter-item"><button data-filter-btn>Mobile</button></li>
+                            <li class="filter-item"><button data-filter-btn>ML</button></li>
                         </ul>
-                    </div>
 
-                    <ul class="project-list">
-                        <!-- <li class="project-item active" data-filter-item data-category="telegram bots"
+                        <div class="filter-select-box">
+                            <button class="filter-select " data-select>
+                                <div class="select-value" data-select-value>Select Category</div>
+
+                                <div class="select-icon">
+                                    <ion-icon name="chevron-down"></ion-icon>
+                                </div>
+                            </button>
+
+                            <ul class="select-list">
+                                <li class="select-item"><button data-select-item>All</button></li>
+                                <li class="select-item"><button data-select-item>Telegram Bots</button></li>
+                                <li class="select-item"><button data-select-item>Desktop</button></li>
+                                <li class="select-item"><button data-select-item>Mobile</button></li>
+                                <li class="select-item"><button data-select-item>ML</button></li>
+                            </ul>
+                        </div>
+
+                        <ul class="project-list">
+                            <!-- <li class="project-item active" data-filter-item data-category="telegram bots"
                             data-project-id="chat-tutor">
                             <a href="#">
                                 <figure class="project-img">
@@ -206,90 +213,91 @@
                             </a>
                         </li> -->
 
-                        <li class="project-card active" data-filter-item data-category="telegram bots"
-                            data-project-id="chat-tutor">
-                            <a href="https://github.com/LessVegetables/language-bot" target="_blank"
-                                class="project-card-link">
-                                <!-- Text Content -->
-                                <div class="project-card-content">
-                                    <h3 class="project-title">ChatTutor</h3>
-                                    <span class="project-tag">Telegram Bot</span>
-                                </div>
+                            <li class="project-card active" data-filter-item data-category="telegram bots"
+                                data-project-id="chat-tutor">
+                                <a href="https://github.com/LessVegetables/language-bot" target="_blank"
+                                    class="project-card-link">
+                                    <!-- Text Content -->
+                                    <div class="project-card-content">
+                                        <h3 class="project-title">ChatTutor</h3>
+                                        <span class="project-tag">Telegram Bot</span>
+                                    </div>
 
-                                <!-- Image (slanted) -->
-                                <div class="project-card-image" data-project-id="chat-tutor">
-                                    <img src="assets//images/chat-1.png" alt="ChatTutor Logo" />
-                                    <img src="assets//images/chat-2.png" alt="Telegram Logo" />
-                                </div>
-                            </a>
-                        </li>
+                                    <!-- Image (slanted) -->
+                                    <div class="project-card-image" data-project-id="chat-tutor">
+                                        <img src="assets//images/chat-1.png" alt="ChatTutor Logo" />
+                                        <img src="assets//images/chat-2.png" alt="Telegram Logo" />
+                                    </div>
+                                </a>
+                            </li>
 
-                        <li class="project-card active" data-filter-item data-category="desktop"
-                            data-project-id="game-of-life">
-                            <a href="https://github.com/LessVegetables/game-of-life" target="_blank"
-                                class="project-card-link">
-                                <!-- Text Content -->
-                                <div class="project-card-content">
-                                    <h3 class="project-title">Game Of Life</h3>
-                                    <span class="project-tag">Desktop</span>
-                                </div>
+                            <li class="project-card active" data-filter-item data-category="desktop"
+                                data-project-id="game-of-life">
+                                <a href="https://github.com/LessVegetables/game-of-life" target="_blank"
+                                    class="project-card-link">
+                                    <!-- Text Content -->
+                                    <div class="project-card-content">
+                                        <h3 class="project-title">Game Of Life</h3>
+                                        <span class="project-tag">Desktop</span>
+                                    </div>
 
-                                <!-- Image (slanted) -->
-                                <div class="project-card-image">
-                                    <img src="assets//images/gof-1.png" alt="GameOfLife home screen" />
-                                    <img src="assets//images/gof-2.png" alt="GameOfLife gameplay" />
-                                </div>
-                            </a>
-                        </li>
+                                    <!-- Image (slanted) -->
+                                    <div class="project-card-image">
+                                        <img src="assets//images/gof-1.png" alt="GameOfLife home screen" />
+                                        <img src="assets//images/gof-2.png" alt="GameOfLife gameplay" />
+                                    </div>
+                                </a>
+                            </li>
 
-                        <li class="project-card active" data-filter-item data-category="desktop"
-                            data-project-id="umovie" data-project-status="unfinished">
-                            <a href="https://github.com/BodgeDook/UPPRPO-Project-NSU" target="_blank"
-                                class="project-card-link">
-                                <!-- Text Content -->
-                                <div class="project-card-content">
-                                    <h3 class="project-title">uMovie</h3>
-                                    <span class="project-tag">Desktop</span>
-                                </div>
-                                <!-- Image (slanted) -->
-                                <div class="project-card-image">
-                                    <img src="assets/images/wip.jpg" alt="WorkInProgress" />
-                                </div>
-                            </a>
-                        </li>
+                            <li class="project-card active" data-filter-item data-category="desktop"
+                                data-project-id="umovie" data-project-status="unfinished">
+                                <a href="https://github.com/BodgeDook/UPPRPO-Project-NSU" target="_blank"
+                                    class="project-card-link">
+                                    <!-- Text Content -->
+                                    <div class="project-card-content">
+                                        <h3 class="project-title">uMovie</h3>
+                                        <span class="project-tag">Desktop</span>
+                                    </div>
+                                    <!-- Image (slanted) -->
+                                    <div class="project-card-image">
+                                        <img src="assets/images/wip.jpg" alt="WorkInProgress" />
+                                    </div>
+                                </a>
+                            </li>
 
-                        <li class="project-card active" data-filter-item data-category="mobile" data-project-id="ulp"
-                            data-project-status="unfinished">
-                            <a href="https://github.com/Universal-Loyalty-Program" target="_blank"
-                                class="project-card-link">
-                                <!-- Text Content -->
-                                <div class="project-card-content">
-                                    <h3 class="project-title">ULP</h3>
-                                    <span class="project-tag">Mobile</span>
-                                </div>
-                                <!-- Image (slanted) -->
-                                <div class="project-card-image">
-                                    <img src="assets/images/wip.jpg" alt="WorkInProgress" />
-                                </div>
-                            </a>
-                        </li>
+                            <li class="project-card active" data-filter-item data-category="mobile"
+                                data-project-id="ulp" data-project-status="unfinished">
+                                <a href="https://github.com/Universal-Loyalty-Program" target="_blank"
+                                    class="project-card-link">
+                                    <!-- Text Content -->
+                                    <div class="project-card-content">
+                                        <h3 class="project-title">ULP</h3>
+                                        <span class="project-tag">Mobile</span>
+                                    </div>
+                                    <!-- Image (slanted) -->
+                                    <div class="project-card-image">
+                                        <img src="assets/images/wip.jpg" alt="WorkInProgress" />
+                                    </div>
+                                </a>
+                            </li>
 
-                        <li class="project-card active" data-filter-item data-category="ml" data-project-id="ml"
-                            data-project-status="unfinished">
-                            <a href="https://github.com/LessVegetables/ml" target="_blank" class="project-card-link">
-                                <!-- Text Content -->
-                                <div class="project-card-content">
-                                    <h3 class="project-title">Virtual Shopping</h3>
-                                    <span class="project-tag">ML</span>
-                                </div>
-                                <!-- Image (slanted) -->
-                                <div class="project-card-image">
-                                    <img src="assets/images/wip.jpg" alt="WorkInProgress" />
-                                </div>
-                            </a>
-                        </li>
+                            <li class="project-card active" data-filter-item data-category="ml" data-project-id="ml"
+                                data-project-status="unfinished">
+                                <a href="https://github.com/LessVegetables/ml" target="_blank"
+                                    class="project-card-link">
+                                    <!-- Text Content -->
+                                    <div class="project-card-content">
+                                        <h3 class="project-title">Virtual Shopping</h3>
+                                        <span class="project-tag">ML</span>
+                                    </div>
+                                    <!-- Image (slanted) -->
+                                    <div class="project-card-image">
+                                        <img src="assets/images/wip.jpg" alt="WorkInProgress" />
+                                    </div>
+                                </a>
+                            </li>
 
-                        <!-- 
+                            <!-- 
 
                         <li class="project-tile active" data-filter-item data-category="ml" data-project-id="ml">
                             <a href="#">
@@ -305,23 +313,25 @@
                                 <p class="project-category">ML</p>
                             </a>
                         </li> -->
-                    </ul>
-                </section>
+                        </ul>
+                    </section>
+                </div>
             </article>
 
             <article class="about " data-page="about">
-                <header>
-                    <h2 class="h2 article-title" data-key="about-me">About me</h2>
-                </header>
+                <div class="article-content">
+                    <header>
+                        <h2 class="h2 article-title" data-key="about-me">About me</h2>
+                    </header>
 
-                <section class="about-text" data-key="about-pitch-1">
-                    <p>Loading...</p>
-                </section>
-                <section class="about-text" data-key="about-pitch-2">
-                    <p></p>
-                </section>
+                    <section class="about-text" data-key="about-pitch-1">
+                        <p>Loading...</p>
+                    </section>
+                    <section class="about-text" data-key="about-pitch-2">
+                        <p></p>
+                    </section>
 
-                <!-- <section class="service">
+                    <!-- <section class="service">
                     <h3 class="h3 service-title" data-key="skills">My Skills</h3>
 
                     <ul class="service-list">
@@ -375,37 +385,39 @@
                     </ul>
                 </section> -->
 
-                <div class="download-resume">
-                    <button class="download-resume-button" data-key="resume-button"></button>
-                </div>
-
-                <section class="timeline">
-                    <div class="title-wrapper">
-                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
-
-                        <h3 class="h3" data-key="education"></h3>
+                    <div class="open-resume">
+                        <a href="./resume_v5.pdf" target="_blank" rel="noopener noreferrer" class="open-resume-button"
+                            data-key="resume-button"></a>
                     </div>
 
-                    <ol class="timeline-list">
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title" data-key="iir-nsu"></h4>
-                            <span>2023 - 2027</span>
-                            <p class="timeline-text" data-key="iir-nsu-text"></p>
-                        </li>
+                    <section class="timeline">
+                        <div class="title-wrapper">
+                            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
 
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title" data-key="mmf-nsu"></h4>
-                            <span>2022 - 2023</span>
-                            <p class="timeline-text" data-key="mmf-nsu-text"></p>
-                        </li>
+                            <h3 class="h3" data-key="education"></h3>
+                        </div>
 
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title" data-key="sesc-nsu"></h4>
-                            <span>2020 - 2022</span>
-                            <p class="timeline-text" data-key="sesc-nsu-text"></p>
-                        </li>
-                    </ol>
-                </section>
+                        <ol class="timeline-list">
+                            <li class="timeline-item">
+                                <h4 class="h4 timeline-item-title" data-key="iir-nsu"></h4>
+                                <span>2023 - 2027</span>
+                                <p class="timeline-text" data-key="iir-nsu-text"></p>
+                            </li>
+
+                            <li class="timeline-item">
+                                <h4 class="h4 timeline-item-title" data-key="mmf-nsu"></h4>
+                                <span>2022 - 2023</span>
+                                <p class="timeline-text" data-key="mmf-nsu-text"></p>
+                            </li>
+
+                            <li class="timeline-item">
+                                <h4 class="h4 timeline-item-title" data-key="sesc-nsu"></h4>
+                                <span>2020 - 2022</span>
+                                <p class="timeline-text" data-key="sesc-nsu-text"></p>
+                            </li>
+                        </ol>
+                    </section>
+                </div>
             </article>
 
             <!-- <article class="contact " data-page="contact">

@@ -1,0 +1,18 @@
+/* Smooth theme transitions: only paint properties
+body,
+.sidebar,
+article,
+.navbar,
+.content-card,
+.service-item,
+.blog-posts-item>a,
+.filter-select,
+.select-list,
+.form-input,
+.form-btn,
+.icon-box::before {
+    transition:
+        background-color 25ms ease,
+        color 25ms ease,
+        border-color 25ms ease;
+} */

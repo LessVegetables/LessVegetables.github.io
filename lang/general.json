@@ -43,6 +43,10 @@
         "en": "daniel@gehrman.me",
         "ru": "d.german@g.nsu.ru"
     },
+    "email-link": {
+        "en": "mailto:daniel@gehrman.me",
+        "ru": "mailto:d.german@g.nsu.ru"
+    },
     "university": {
         "en": "University",
         "ru": "Университет"
@@ -50,6 +54,10 @@
     "university-name": {
         "en": "Novosibirsk State University",
         "ru": "Новосибирский Государственный Университет"
+    },
+    "university-link": {
+        "en": "https://english.nsu.ru",
+        "ru": "https://www.nsu.ru/n/"
     },
     "location": {
         "en": "Location",

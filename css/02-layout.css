@@ -1,0 +1,242 @@
+main {
+    margin: 15px 12px;
+    margin-bottom: 75px;
+    min-width: 259px;
+}
+
+/* .main-content {
+    position: relative;
+    min-height: 100%;
+} */
+
+/* make pages overlap */
+/* .main-content>article {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+} */
+
+
+.sidebar {
+    position: relative;
+    z-index: 10;
+}
+
+.sidebar,
+article {
+    background: var(--sidebar-background);
+    border: 1px solid var(--jet);
+    border-radius: 20px;
+    box-shadow: var(--shadow1);
+    /* z-index: 1; */
+    padding: 15px;
+}
+
+article {
+    display: none;
+    margin-bottom: 0;
+}
+
+article.exiting,
+article.active {
+    display: block;
+}
+
+article.active .article-content {
+    animation: fade-in 0.15s ease both;
+}
+
+article.exiting .article-content {
+    animation: fade-out 0.15s ease forwards;
+}
+
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background: var(--jet);
+    margin: 16px 0;
+}
+
+/* Shared section title bar */
+.article-title {
+    position: relative;
+    padding-bottom: 7px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.article-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background: var(--text-gradient);
+    border-radius: 3px;
+}
+
+/* Scrollbar utility */
+.has-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.has-scrollbar::-webkit-scrollbar-track {
+    background: var(--onyx);
+    border-radius: 5px;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--selection-background);
+    border-radius: 5px;
+}
+
+.has-scrollbar::-webkit-scrollbar-button {
+    width: 20px;
+}
+
+/* Generic content card */
+.content-card {
+    position: relative;
+    background: var(--border-gradient-onyx);
+    padding: 15px;
+    padding-top: 45px;
+    border-radius: 14px;
+    box-shadow: var(--shadow2);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.content-card::before {
+    content: '';
+    position: absolute;
+    inset: 1px;
+    background: var(--bg-gradient-jet);
+    border-radius: inherit;
+    z-index: -1;
+}
+
+@media (min-width: 580px) {
+    :root {
+        --fs1: 32px;
+        --fs2: 24px;
+        --fs3: 26px;
+        --fs4: 18px;
+        --fs6: 15px;
+        --fs7: 15px;
+        --fs8: 12px;
+    }
+
+    .sidebar,
+    article {
+        width: 520px;
+        margin-inline: auto;
+        padding: 30px;
+    }
+
+    .article-title {
+        font-weight: var(--fw600);
+        padding-bottom: 15px;
+    }
+
+    .article-title::after {
+        width: 40px;
+        height: 5px;
+    }
+
+    main {
+        margin-top: 60px;
+        margin-bottom: 100px;
+    }
+
+    .separator {
+        margin: 32px 0;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .sidebar,
+    article {
+        width: 700px;
+    }
+
+    .has-scrollbar::-webkit-scrollbar-button {
+        width: 100px;
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --shadow1: -4px 8px 24px hsla(0, 0%, 0%, .125);
+        --shadow2: 0px 16px 30px hsla(0, 0%, 0%, .125);
+        --shadow3: 0px 16px 40px hsla(0, 0%, 0%, .125);
+    }
+
+    .sidebar,
+    article {
+        width: 950px;
+        box-shadow: var(--shadow5);
+    }
+
+    main {
+        margin-bottom: 60px;
+    }
+
+    .main-content {
+        position: relative;
+        width: max-content;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1250px) {
+    body::-webkit-scrollbar {
+        width: 20px;
+    }
+
+    body::-webkit-scrollbar-track {
+        background: var(--body-background);
+    }
+
+    body::-webkit-scrollbar-thumb {
+        border: 5px solid var(--body-background);
+        background: hsla(0, 0%, 100%, .1);
+        border-radius: 20px;
+        box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, .11), inset -1px -1px 0 hsla(0, 0%, 100%, .11);
+    }
+
+    body::-webkit-scrollbar-thumb:hover {
+        background: hsla(0, 0%, 100%, .15);
+    }
+
+    body::-webkit-scrollbar-button {
+        height: 60px;
+    }
+
+    .sidebar,
+    article {
+        width: auto;
+    }
+
+    article {
+        min-height: 100%;
+    }
+
+    main {
+        max-width: 1200px;
+        margin-inline: auto;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 25px;
+    }
+
+    .main-content {
+        min-width: 75%;
+        width: 75%;
+        margin: 0;
+    }
+}

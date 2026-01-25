@@ -1,0 +1,37 @@
+/* ABOUT section */
+
+.about-text {
+    color: var(--main-text-1);
+    font-size: var(--fs4);
+    font-weight: var(--fw300);
+    line-height: 1.6;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Resume button (from your about.css) */
+.open-resume {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.open-resume-button {
+    background-color: hsl(210, 100%, 56%);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.open-resume-button:hover {
+    background-color: hsl(211, 100%, 35%);
+}
