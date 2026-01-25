@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--ff-poppins);
+}
+
+body {
+    background: var(--body-background);
+    transition: var(--transition2);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img,
+ion-icon,
+a,
+button,
+time,
+span {
+    display: block;
+}
+
+button {
+    font: inherit;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    background: none;
+    font: inherit;
+}
+
+::selection {
+    background: var(--selection-background);
+    color: var(--body-background);
+}
+
+:focus {
+    outline-color: var(--focus-outline);
+}
+
+/* Headings utility classes */
+.h2,
+.h3,
+.h4,
+.h5 {
+    color: var(--main-text-2);
+    text-transform: capitalize;
+}
+
+.h2 {
+    font-size: var(--fs1);
+}
+
+.h3 {
+    font-size: var(--fs2);
+}
+
+.h4 {
+    font-size: var(--fs4);
+}
+
+.h5 {
+    font-size: var(--fs7);
+    font-weight: var(--fw500);
+}
+
+/* Simple animation used by article switching */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

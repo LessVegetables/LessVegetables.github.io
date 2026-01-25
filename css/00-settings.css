@@ -1,0 +1,90 @@
+:root {
+    /* Background gradients */
+    --bg-gradient-onyx: linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%);
+    --bg-gradient-jet: linear-gradient(to bottom right, hsla(240, 1%, 18%, .251) 3%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+
+    /* Accent gradients (blue) */
+    --bg-gradient-1: linear-gradient(to bottom right, hsl(210, 100%, 65%) 0%, hsla(210, 100%, 60%, 0) 50%);
+    --bg-gradient-2: linear-gradient(135deg, hsla(210, 100%, 65%, .251) 0%, hsla(210, 100%, 60%, 0) 59.86%), hsl(240, 2%, 13%);
+    --text-gradient: linear-gradient(to right, hsl(210, 100%, 66%), hsl(210, 100%, 60%));
+
+    /* Other colors */
+    --border-gradient-onyx: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
+    --jet: hsl(0, 0%, 22%);
+    --onyx: hsl(240, 1%, 17%);
+    --icon-box-background: hsl(240, 2%, 13%);
+    --icon-box-background-hover: hsl(210, 100%, 66%);
+    --sidebar-background: hsl(240, 2%, 12%);
+    --body-background: hsl(0, 0%, 7%);
+
+    --main-text-1: hsl(0, 0%, 100%);
+    --main-text-2: hsl(0, 0%, 98%);
+    --sub-text-1: hsl(0, 0%, 70%);
+
+    /* Accent color variable (blue) */
+    --selection-background: hsl(210, 100%, 66%);
+    --focus-outline: hsl(210, 100%, 66%);
+    --icon-box: hsl(210, 100%, 66%);
+    --icon-box-hover: hsl(240, 2%, 13%);
+    --vegas-blue: hsl(210, 54%, 58%);
+
+    --light-gray: hsl(0, 0%, 84%);
+    --light-gray70: hsla(0, 0%, 84%, .7);
+    --bittersweet-shimmer: hsl(0, 43%, 51%);
+
+    /* Typography */
+    --ff-poppins: 'Poppins', sans-serif;
+
+    --fs1: 24px;
+    --fs2: 18px;
+    --fs3: 17px;
+    --fs4: 16px;
+    --fs5: 15px;
+    --fs6: 14px;
+    --fs7: 13px;
+    --fs8: 12px;
+
+    --fw300: 300;
+    --fw400: 400;
+    --fw500: 500;
+    --fw600: 600;
+
+    --shadow1: -4px 8px 24px hsla(0, 0%, 0%, .25);
+    --shadow2: 0px 16px 30px hsla(0, 0%, 0%, .25);
+    --shadow3: 0px 16px 40px hsla(0, 0%, 0%, .25);
+    --shadow4: 0px 25px 50px hsla(0, 0%, 0%, .15);
+    --shadow5: 0px 24px 80px hsla(0, 0%, 0%, .25);
+
+    --transition1: .25s ease;
+    --transition2: .5s ease-in-out;
+}
+
+[data-theme="light"] {
+    /* Lighter background gradients */
+    --bg-gradient-onyx: linear-gradient(to bottom right, hsl(0, 0%, 98%) 3%, hsl(0, 0%, 95%) 97%);
+    --bg-gradient-jet: linear-gradient(to bottom right, hsla(0, 0%, 96%, .251) 3%, hsla(0, 0%, 94%, 0) 100%), hsl(0, 0%, 95%);
+
+    /* Blue accents adjusted for light background */
+    --bg-gradient-1: linear-gradient(to bottom right, hsl(210, 100%, 85%) 0%, hsla(210, 100%, 80%, 0) 50%);
+    --bg-gradient-2: linear-gradient(135deg, hsla(210, 100%, 85%, .251) 0%, hsla(210, 100%, 80%, 0) 59.86%), hsl(0, 0%, 95%);
+    --text-gradient: linear-gradient(to right, hsl(210, 100%, 40%), hsl(210, 100%, 35%));
+
+    --border-gradient-onyx: linear-gradient(to bottom right, hsl(0, 0%, 90%) 0%, hsla(0, 0%, 90%, 0) 50%);
+
+    --jet: hsl(0, 0%, 88%);
+    --onyx: hsl(0, 0%, 95%);
+    --icon-box-background: hsl(0, 0%, 98%);
+    --icon-box-background-hover: hsl(210, 100%, 40%);
+    --sidebar-background: hsl(0, 0%, 99%);
+    --body-background: hsl(0, 0%, 100%);
+
+    --main-text-1: hsl(0, 0%, 0%);
+    --main-text-2: hsl(0, 0%, 10%);
+    --sub-text-1: hsl(0, 0%, 30%);
+
+    --selection-background: hsl(210, 100%, 40%);
+    --focus-outline: hsl(210, 100%, 40%);
+    --icon-box: hsl(210, 100%, 40%);
+    --icon-box-hover: hsl(0, 0%, 98%);
+    --vegas-blue: hsl(210, 54%, 40%);
+}
