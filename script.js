@@ -97,11 +97,18 @@ document.addEventListener("DOMContentLoaded", function () {
     function applyTranslations(lang) {
         document.querySelectorAll("[data-key]").forEach((el) => {
             const key = el.getAttribute("data-key");
+            const attr = el.getAttribute("data-attr");
+
             if (translations[key] && translations[key][lang]) {
-                el.textContent = translations[key][lang];
+                if (attr) {
+                    el.setAttribute(attr, translations[key][lang]);
+                } else {
+                    el.textContent = translations[key][lang];
+                }
             }
         });
     }
+
 
     // Load translations on page load
     loadTranslations();
