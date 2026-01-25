@@ -256,18 +256,74 @@ for (let i = 0; i < formInputs.length; i++) {
 const navigationLinks = document.querySelectorAll('[data-nav-link]');
 const pages = document.querySelectorAll('[data-page]');
 
+const DURATION = 150;
+let pendingTimer = null;
+
 for (let i = 0; i < navigationLinks.length; i++) {
     navigationLinks[i].addEventListener('click', function (event) {
-        event.preventDefault(); // bc of href="#" — prevents from jumping up to the top of the screen
-        for (let i = 0; i < pages.length; i++) {
-            if (this.dataset.key == pages[i].dataset.page) {
-                pages[i].classList.add('active');
-                navigationLinks[i].classList.add('active');
-                window.scrollTo(0, 0);
-            } else {
-                pages[i].classList.remove('active');
-                navigationLinks[i].classList.remove('active');
+        event.preventDefault();
+
+        // If the user clicks again mid-transition, cancel the previous pending activation
+        if (pendingTimer) {
+            clearTimeout(pendingTimer);
+            pendingTimer = null;
+        }
+
+        const key = this.dataset.key;
+
+        // If already on this page, do nothing
+        const current = document.querySelector('[data-page].active');
+        if (current && current.dataset.page === key) return;
+
+        // Update nav link active state immediately (optional; you can also delay this)
+        for (let j = 0; j < navigationLinks.length; j++) {
+            navigationLinks[j].classList.toggle('active', navigationLinks[j] === this);
+        }
+
+        // Fade out the old page first
+        if (current) {
+            current.classList.remove('active');
+            current.classList.add('exiting');
+
+            // After fade-out completes, hide old page and show+fade-in new page
+            pendingTimer = setTimeout(() => {
+                current.classList.remove('exiting');
+
+                // Activate the new page ONLY now (successive transition)
+                for (let j = 0; j < pages.length; j++) {
+                    pages[j].classList.toggle('active', pages[j].dataset.page === key);
+                }
+
+                pendingTimer = null;
+            }, DURATION);
+        } else {
+            // No current page: just show the new page immediately
+            for (let j = 0; j < pages.length; j++) {
+                pages[j].classList.toggle('active', pages[j].dataset.page === key);
             }
         }
     });
 }
+
+
+
+// const navigationLinks = document.querySelectorAll('[data-nav-link]');
+// const pages = document.querySelectorAll('[data-page]');
+
+// const DURATION = 500;
+
+// for (let i = 0; i < navigationLinks.length; i++) {
+//     navigationLinks[i].addEventListener('click', function (event) {
+//         event.preventDefault(); // bc of href="#" — prevents from jumping up to the top of the screen
+//         for (let i = 0; i < pages.length; i++) {
+//             if (this.dataset.key == pages[i].dataset.page) {
+//                 pages[i].classList.add('active');
+//                 navigationLinks[i].classList.add('active');
+//                 // window.scrollTo(0, 0);
+//             } else {
+//                 pages[i].classList.remove('active');
+//                 navigationLinks[i].classList.remove('active');
+//             }
+//         }
+//     });
+// }
