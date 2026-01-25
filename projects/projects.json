@@ -1,0 +1,94 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": {
+                "en": "ChatTutor",
+                "ru": "ChatTutor"
+            },
+            "short-description": {
+                "en": "short_description",
+                "ru": "короткое_описание"
+            },
+            "long-description": {
+                "en": "long_description",
+                "ru": "длинное_описание"
+            },
+            "assets": [],
+            "tags": [],
+            "github-url": "https://github.com/LessVegetables/language-bot"
+        },
+        {
+            "id": 2,
+            "name": {
+                "en": "project_name",
+                "ru": "название_проекта"
+            },
+            "short-description": {
+                "en": "short_description",
+                "ru": "короткое_описание"
+            },
+            "long-description": {
+                "en": "long_description",
+                "ru": "длинное_описание"
+            },
+            "assets": [],
+            "tags": [],
+            "github-url": "https://www.github.com/lessvegetables/"
+        },
+        {
+            "id": 3,
+            "name": {
+                "en": "project_name",
+                "ru": "название_проекта"
+            },
+            "short-description": {
+                "en": "short_description",
+                "ru": "короткое_описание"
+            },
+            "long-description": {
+                "en": "long_description",
+                "ru": "длинное_описание"
+            },
+            "assets": [],
+            "tags": [],
+            "github-url": "https://www.github.com/lessvegetables/"
+        },
+        {
+            "id": 4,
+            "name": {
+                "en": "project_name",
+                "ru": "название_проекта"
+            },
+            "short-description": {
+                "en": "short_description",
+                "ru": "короткое_описание"
+            },
+            "long-description": {
+                "en": "long_description",
+                "ru": "длинное_описание"
+            },
+            "assets": [],
+            "tags": [],
+            "github-url": "https://www.github.com/lessvegetables/"
+        },
+        {
+            "id": 5,
+            "name": {
+                "en": "project_name",
+                "ru": "название_проекта"
+            },
+            "short-description": {
+                "en": "short_description",
+                "ru": "короткое_описание"
+            },
+            "long-description": {
+                "en": "long_description",
+                "ru": "длинное_описание"
+            },
+            "assets": [],
+            "tags": [],
+            "github-url": "https://www.github.com/lessvegetables/"
+        }
+    ]
+}
