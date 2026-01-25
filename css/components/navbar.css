@@ -33,6 +33,7 @@
 
 .nav-button.active {
     color: var(--focus-outline);
+    font-weight: bolder;
 }
 
 @media (min-width: 580px) {

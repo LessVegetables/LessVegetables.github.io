@@ -40,7 +40,6 @@ article {
 article.exiting,
 article.active {
     display: block;
-    pointer-events: none;
 }
 
 article.active .article-content {
