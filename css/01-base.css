@@ -12,7 +12,6 @@ html {
 
 body {
     background: var(--body-background);
-    transition: var(--transition2);
 }
 
 a {
@@ -83,6 +82,60 @@ textarea {
     font-weight: var(--fw500);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    transition: var(--transition2);
+}
+
+a,
+p,
+body,
+figure,
+button,
+li,
+address,
+time {
+    transition: var(--transition2);
+}
+
+/* ion-icon {
+    transition: var(--transition2);
+} */
+
+div {
+    transition: var(--transition2);
+}
+
+ul {
+    transition: var(--transition2);
+}
+
+nav {
+    transition: var(--transition2);
+}
+
+header {
+    transition: var(--transition2);
+}
+
+article {
+    transition: var(--transition2);
+}
+
+section {
+    transition: var(--transition2);
+}
+
+ol {
+    transition: var(--transition2);
+}
+
+span {
+    transition: var(--transition2);
+}
 
 /* Simple animation used by article switching */
 @keyframes fade-in {
