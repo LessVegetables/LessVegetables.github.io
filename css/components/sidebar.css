@@ -63,7 +63,7 @@
     background: var(--border-gradient-onyx);
     padding: 10px;
     box-shadow: var(--shadow2);
-    transition: var(--transition1);
+    transition: var(--transition2);
     z-index: 1;
 }
 
@@ -73,7 +73,7 @@
     inset: 1px;
     border-radius: inherit;
     background: var(--bg-gradient-jet);
-    transition: var(--transition1);
+    transition: var(--transition2);
     z-index: -1;
 }
 

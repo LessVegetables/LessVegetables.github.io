@@ -80,7 +80,7 @@ textarea.form-input {
     text-transform: capitalize;
     box-shadow: var(--shadow3);
     z-index: 1;
-    transition: var(--transition1);
+    transition: var(--transition2);
 }
 
 .form-btn::before {
@@ -90,7 +90,7 @@ textarea.form-input {
     background: var(--bg-gradient-jet);
     border-radius: inherit;
     z-index: -1;
-    transition: var(--transition1);
+    transition: var(--transition2);
 }
 
 .form-btn ion-icon {
