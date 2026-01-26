@@ -1,13 +1,14 @@
 .sidebar {
     margin-bottom: 15px;
     max-height: 112px;
+    min-height: 180px;
     overflow: hidden;
     padding: 15px;
     transition: var(--transition2);
 }
 
 .sidebar.active {
-    max-height: 405px;
+    max-height: max-content;
 }
 
 .sidebar-info {
@@ -99,6 +100,7 @@
 .sidebar.active .sidebar-info-more {
     opacity: 1;
     visibility: visible;
+    max-height: max-content;
 }
 
 .contacts-list {
