@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>QR Generator</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 720px;
+            min-width: fit-content;
+            margin: 40px auto;
+            padding: 0 16px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+        }
+
+        .wrap {
+            margin-top: 16px;
+            display: grid;
+            gap: 12px;
+        }
+
+        img {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .hint {
+            color: #555;
+            font-size: 14px;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>QR Code Generator</h1>
+
+    <div class="wrap">
+        <input id="text" placeholder="Type the thing to turn into a QR-code here" autocomplete="off" />
+        <img id="qrImg" alt="QR code" width="256" height="256" />
+        <p class="hint">Right-click / long-press to save</p>
+    </div>
+
+
+    <!-- QRCode library (UMD build exposes a global "QRCode") -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.4/lib/browser.min.js"></script> -->
+    <!-- <script type="module"> import qrcode from 'https://cdn.jsdelivr.net/npm/qrcode@1.5.4/+esm' </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.4/lib/browser.min.js"></script>
+
+
+    <script type="module">
+        import QRCode from "https://cdn.jsdelivr.net/npm/qrcode@1.5.4/+esm";
+
+        const input = document.getElementById("text");
+        const canvas = document.getElementById("qr");
+
+        const img = document.getElementById("qrImg");
+
+        async function render() {
+            const value = input.value.trim() || " ";
+            img.src = await QRCode.toDataURL(value, {
+                width: 256,
+                margin: 2,
+                errorCorrectionLevel: "M",
+            });
+        }
+
+        input.addEventListener("input", render);
+        input.value = "Type the thing to turn into a QR-code here";
+        render();
+    </script>
+</body>
+
+</html>
