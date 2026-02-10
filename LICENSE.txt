@@ -8,7 +8,6 @@ Leonam Silva de Souza.
 The original template is licensed under the MIT License:
 
 ------------------------------------------------------------
-
 The MIT License (MIT)
 
 Copyright (c) 2025 Leonam Silva de Souza (https://codepen.io/leonam-silva-de-souza/pen/vYowKqP)
@@ -30,7 +29,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
 ------------------------------------------------------------
 
 
@@ -48,3 +46,17 @@ All rights reserved.
 This content is NOT licensed under the MIT License and may not be
 copied, redistributed, or reused without explicit permission
 from the author.
+
+
+============================================================
+THIRD-PARTY LIBRARIES AND ASSETS
+============================================================
+
+This project may include third-party libraries, fonts, images,
+or other assets that are subject to their own licenses.
+
+Such third-party materials are NOT covered by the copyright
+statement in the "ORIGINAL WORK AND CONTENT" section above.
+
+Each third-party component remains the property of its respective
+author and is governed by its own license terms.
