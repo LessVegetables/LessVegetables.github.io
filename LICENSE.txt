@@ -37,15 +37,15 @@ ORIGINAL WORK AND CONTENT
 ============================================================
 
 Except where otherwise noted, all modifications, original code,
-website content, text, images, and project descriptions contained
-in this repository are:
+website content, text, images, personal information, and project
+descriptions contained in this repository are:
 
 Copyright © 2026 Daniel Gehrman
 All rights reserved.
 
-This content is NOT licensed under the MIT License and may not be
-copied, redistributed, or reused without explicit permission
-from the author.
+This material is NOT licensed under the MIT License and may not
+be copied, redistributed, or reused without explicit written
+permission from the author.
 
 
 ============================================================
