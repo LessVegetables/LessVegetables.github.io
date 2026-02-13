@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="name">Daniel Gehrman</title>
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Daniel Gehrman",
+            "url": "https://www.d.gehrman.me",
+            "sameAs": [
+                "https://www.instagram.com/danielgehrman",
+                "https://github.com/LessVegetables",
+                "https://www.linkedin.com/in/daniel-gehrman"
+            ]
+        }
+    </script>
+
+    <!-- <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon"> -->
+</head>
+
+<body>
+    <main>
+        <p>Resume landing page</p>
+    </main>
+
+
+
+    <script>
+        (function () {
+            const params = new URLSearchParams(window.location.search);
+            const cert = params.get('cert');
+            const lang = params.get('lang');
+
+            const routes = {
+                1: '/files/certificate-1.pdf',
+                en: '/files/resume-en.pdf',
+                ru: '/files/resume-ru.pdf'
+            };
+
+            if (routes[cert]) {
+                window.location.replace(routes[cert]);
+            }
+            if (routes[lang]) {
+                window.location.replace(routes[lang]);
+            }
+        })();
+    </script>
+
+
+</body>
+
+
+
+
+
+
+</html>
